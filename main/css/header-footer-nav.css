@@ -1,0 +1,48 @@
+/* header */
+#header-main #logo{
+    text-decoration: none;
+    position: relative;
+}
+#header-title h1,h2{
+    display: inline-flex;
+    margin-top: 18px;
+}
+#header-main #logo p{
+    position: absolute;
+    font-size: 14px;
+    left: 125px;
+    top: 5px;
+    color: white;
+}
+#header-search{
+    height: 35px;
+    width: 50%;
+    background-color: white;
+    margin-left: 30px;
+}
+#header-search input{
+    height: 35px;
+}
+#header-icon
+{
+ margin-left: 50px;
+}
+/* nav */
+nav .nav-item{
+    margin-right: 15px;    
+}
+nav .nav-item .menu-lv-1{
+    width: 200px;
+    background-color: aliceblue;
+    padding: 0;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+nav .nav-item:hover .menu-lv-1{
+    display: block;
+}
+/* footer */
+footer{
+
+}

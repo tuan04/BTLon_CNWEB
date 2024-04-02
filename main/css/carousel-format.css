@@ -1,0 +1,13 @@
+#carousel-button{
+    display: none;
+}
+#carousel:hover #carousel-button{
+    display: block;
+}
+#carousel{
+    position: relative;
+}
+#carousel img{
+    position: relative;
+    z-index: -1;
+}

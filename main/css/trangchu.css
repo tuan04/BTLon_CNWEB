@@ -1,0 +1,27 @@
+#trademark-list button{
+    height: 90px;
+}
+.item-list .item{
+    border:1px solid black;
+    padding: 15px;
+    text-decoration: none;
+    position: relative;
+    height: 310px;
+}
+.item-list .item .item-title{
+    margin-top: 20px;
+    color: black;
+}
+.item-list .item .item-price{
+    position: absolute;
+    color: red;
+    bottom: 0;
+
+}
+.item-list h4{
+    margin: 40px 0;
+}
+.item-list .item img{
+    width: 150px;
+    height: 180px;
+} 
