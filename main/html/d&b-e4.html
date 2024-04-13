@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/main/js/bootstrap.bundle.min.js"></script>
-    <script src="/main/js/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="/main/css/chiTietSP.css">
-    <link rel="stylesheet" href="/main/css/header-footer-nav.css">
-    <link rel="stylesheet" href="/main/css/bootstrap.min.css">
-    <title>Nexo ID24T</title>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../css/chiTietSP.css">
+    <link rel="stylesheet" href="../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>d&b Audiotechnik E4</title>
     <style>
         [class*=col-]{
             padding: 0;
@@ -31,7 +31,7 @@
             })
             $("#slsp").change(function(){
                 let sl = $("#slsp").val();
-                let gia = 32576500;
+                let gia = 44117480;
                 if(!(sl == "")){
                     $("#tongTien").html(formatCurrency(gia*sl));
                 }
@@ -46,8 +46,8 @@
     <div class="container-fluid" style="position: relative;">
         <header class="row bg-black">
             <div id="header-main" class="col-10 mx-auto d-flex">
-                <a id="logo" href="/main/html/trangchu.html" class="d-flex" style="text-decoration: none;">
-                    <img src="/main/image/icon/speaker.png" width="70px" height="70px">
+                <a id="logo" href="../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../image/icon/speaker.png" width="70px" height="70px">
                     <p>Uy tín - Chất lượng - Giá rẻ</p>
                     <div id="header-title">
                         <h1 style="color: orange;">SOUND</h1>
@@ -56,11 +56,11 @@
                 </a>
                 <div id="header-search" class="input-group rounded-5 my-auto">
                     <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
-                    <button type="button" class="btn"><img src="/main/image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                    <button type="button" class="btn"><img src="../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
                 </div>
                 <div id="header-icon" class="my-auto">
-                    <button type="button" class="btn" style="margin-right: 5px;"><img src="/main/image/icon/bell.png" width="20px"></button>
-                    <button type="button" class="btn"><img src="/main/image/icon/cart.png" width="20px"></button>
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../image/icon/cart.png" width="20px"></button>
                 </div>
                 <div id="login">
                     <a href="#" class="me-2">Đăng nhập</a>
@@ -115,57 +115,49 @@
             <div class="col-8 row">
                 <div class="sp-main pb-2 col-12 row">
                     <div class="col">
-                        <img src="/main/image/speaker/nexo-id24t.png" class="img-main">
+                        <img src="../image/speaker/d&b-e4.png" class="img-main">
                     </div>
                     <div class="col p-0">
-                        <h3>Loa Nexo ID24T</h3>
+                        <h3>Loa d&b Audiotechnik E4</h3>
                         <table class="table border" style="font-size: 14px;">
                             <tr>
-                                <td><img src="/main/image/icon/box.png" width="20px">Mã SP: <b>ID24T</b></td>
-                                <td><img src="/main/image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
+                                <td><img src="../image/icon/box.png" width="20px">Mã SP: <b>e4</b></td>
+                                <td><img src="../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 đôi</b></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><img src="/main/image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">Nexo</b></td>
+                                <td colspan="2"><img src="../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">d&b Audiotechnik</b></td>
                             </tr>
                             <tr>
-                                <td><img src="/main/image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
-                                <td><img src="/main/image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                                <td><img src="../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
                             </tr>
                         </table>
                         <div class="row m-0">
                             <p style="width: 98px;">Số lượng:</p> 
                             <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
-                            <label style="color: red; width:auto;">Giá: <b id="tongTien">32.576.500</b>đ</label>
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">44.117.880</b>đ</label>
                             <button class="btn btn-primary py-2 mb-2">Đặt hàng ngay</button>
                             <button class="btn btn-success py-2">Mua trả góp</button>
                         </div>
                     </div>
                 </div>
                 <div class="row my-5">
-                    <p>Loa Nexo ID24T đã từ lâu là biểu tượng của chất lượng âm thanh cao cấp và thiết kế tinh tế trong ngành công nghiệp âm thanh. Với một dãy các tính năng tiên tiến và khả năng tái tạo âm thanh xuất sắc, sản phẩm này đem đến trải nghiệm âm thanh đỉnh cao cho người yêu âm nhạc và chuyên gia âm thanh. </p>
-                    <h3>Dây chuyền hiện đại sản xuất loa Nexo ID24T </h3>
-                    <p><br>Dây chuyền sản xuất loa ID24T bắt đầu từ giai đoạn thiết kế và nghiên cứu sâu rộng. Đội ngũ kỹ sư và nhà thiết kế hàng đầu của Nexo luôn tìm kiếm cách để cải thiện thiết kế và hiệu suất của sản phẩm. Sự tập trung vào từng chi tiết giúp loa ID24T đạt được sự hoàn hảo trong việc tái tạo âm thanh.
+                    <p>Âm thanh là một phần không thể thiếu trong cuộc sống của chúng ta. Nó có khả năng làm sống động không gian, tạo nên những cung bậc cảm xúc và đưa chúng ta vào một thế giới khác, nơi mà âm thanh trở thành ngôn ngữ chung của mọi người. Và trong hành trình khám phá âm thanh, loa d&b Audiotechnik E4 là một người bạn đồng hành đáng tin cậy.</p>
+                    <h3>Loa d&b Audiotechnik E4 nổi bật với thiết kế độc đáo </h3>
+                    <p><br>Loa karaoke cao cấp E4 được thiết kế với sự cân nhắc tỉ mỉ từng chi tiết. Với kích thước nhỏ gọn, nó có thể dễ dàng lắp đặt và di chuyển trong mọi không gian mà không gây cản trở. Điều này làm cho loa E4 trở thành một lựa chọn lý tưởng cho các sự kiện như hội nghị, buổi biểu diễn nhỏ, hay các không gian có diện tích hạn chế.
                         <br><br>
-                        Quy trình sản xuất Nexo ID24T được thực hiện bằng sự kết hợp giữa con người và máy móc hiện đại. Từ cắt, ghép, hàn, đến lắp ráp và kiểm tra chất lượng, mọi bước đều được thực hiện với sự tỉ mỉ và tập trung vào chi tiết. Sự kết hợp giữa nguồn nhân lực chất lượng và công nghệ tiên tiến đảm bảo rằng mỗi sản phẩm đạt chất lượng tối ưu.
-                        <br><br>
-                        Loa Nexo ID24T sử dụng chất liệu cao cấp và linh kiện chất lượng để đảm bảo rằng âm thanh phát ra luôn chất lượng và không bị biến dạng. Sự kết hợp giữa vật liệu chất lượng và công nghệ hiện đại giúp tạo nên sự bền bỉ và độ tin cậy của sản phẩm.
-                        <br><br>
-                        Sau khi hoàn thiện quy trình sản xuất, loa Nexo ID24T được đóng gói cẩn thận và chuẩn bị cho việc vận chuyển đến khắp nơi trên thế giới. Đội ngũ vận chuyển đảm bảo rằng sản phẩm đến tay khách hàng một cách an toàn và bảo đảm. <br>
-                        <img src="/main/image/speaker/nexo-id24t.png" style="width: 50%; display: block;" class="mx-auto">  
+                        Bên cạnh kích thước nhỏ gọn, thiết kế của hát karaoke chuyên nghiệp E4 còn là một tác phẩm nghệ thuật đầy sáng tạo. Với các góc cạnh tinh tế và đường nét mềm mại, loa E4 thể hiện sự hài hòa giữa công nghệ và thẩm mỹ. Bề mặt bằng vật liệu chất lượng cao, kết hợp với các chi tiết kim loại sang trọng, tạo nên một vẻ ngoài đẳng cấp và đầy quyền lực.
+                        <img src="../image/speaker/d&b-e4.png" style="width: 50%; display: block;" class="mx-auto">  
                     </p>
-                <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                    <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
                 </div>
                 <div class="row" id="docThem">
-                    <h3>Linh kiện cao cấp được tích hợp trong loa Nexo ID24T </h3>
-                    <p><br>Màng loa chất lượng cao: Màng loa là một phần quan trọng trong việc tái tạo âm thanh. Loa Nexo ID24T sử dụng màng loa cao cấp được làm từ chất liệu chịu nhiệt và có độ cứng tốt. Điều này giúp tái tạo âm thanh chính xác và không biến dạng, bất kể âm lượng hoặc tần số.
+                    <h3>Loa d&b Audiotechnik E4 - Sự chuyên nghiệp đến từ chất âm </h3>
+                    <p><br>Sự chuyên nghiệp của loa hát karaoke cao cấp E4 không chỉ xuất phát từ chất âm tuyệt vời mà còn từ khả năng tương thích và linh hoạt của nó. Với thiết kế đa dạng và khả năng kết hợp với các hệ thống âm thanh khác, loa E4 là lựa chọn lý tưởng cho mọi không gian và sự kiện. Từ các buổi biểu diễn trực tiếp đến các hội nghị quy mô nhỏ, loa E4 luôn đáp ứng mọi yêu cầu và tạo nên một trải nghiệm âm thanh đáng nhớ.
                         <br><br>
-                        Crossover Network (Bộ phân tần tín hiệu): Bộ phân tần tín hiệu là một linh kiện quan trọng trong việc phân phối tín hiệu âm thanh đến các màng loa con. Trong loa ID24T, bộ phân tần được chế tạo để đảm bảo rằng âm thanh được chia đều và chính xác, tối ưu hóa hiệu suất của từng màng loa.
+                        Không chỉ đơn thuần là một công cụ âm nhạc, loa chuyên nghiệp cao cấp E4 còn là một biểu tượng của sự chuyên nghiệp và chất lượng cao. Thiết kế tinh tế với chất liệu chất lượng cao, loa E4 tạo nên một vẻ đẹp đầy lôi cuốn và đẳng cấp. Bề mặt mịn màng và các chi tiết kim loại sang trọng mang lại một cái nhìn thật ấn tượng và đẳng cấp cho loa E4.
                         <br><br>
-                        Nam châm loa Neodymium: Nexo ID24T sử dụng nam châm loa Neodymium, một loại nam châm mạnh và nhẹ, để tạo lực đẩy âm. Điều này giúp cải thiện hiệu suất và hiệu quả năng lượng của loa, đồng thời giảm trọng lượng tổng thể của sản phẩm.
-                        <br><br>
-                        Vỏ hộp tối ưu: Vỏ hộp loa Nexo ID24T được thiết kế tối ưu để giảm hiện tượng phản xạ âm thanh và đảm bảo âm thanh phát ra mạnh mẽ và tự nhiên. Cấu trúc vỏ hộp đảm bảo rằng âm thanh không bị biến dạng do tương tác với môi trường xung quanh.
-                        <br><br>
-                        Linh kiện chất lượng khác: Ngoài các linh kiện quan trọng như loa, bộ phân tần và nam châm loa, loa ID24T còn sử dụng các linh kiện khác như dây cáp chất lượng cao, kết nối và điều khiển điện tử đỉnh cao để đảm bảo sự hoàn hảo trong từng chi tiết.</p>
+                        Với loa d&b Audiotechnik E4, sự chuyên nghiệp không chỉ là một khái niệm mà là sự hiện thực hóa thông qua chất âm vượt trội và thiết kế đẳng cấp. Loa cao cấp E4 được xây dựng để đáp ứng những yêu cầu cao nhất của các chuyên gia âm thanh và người yêu âm nhạc.</p>
                         <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
                 </div>
             </div>
@@ -176,15 +168,15 @@
                     </tr>
                     <tr>
                         <td class="col-6">Mã sản phẩm:</td>
-                        <td>ID24T</td>
+                        <td>e4</td>
                     </tr>
                     <tr>
-                        <td>Chất liệu vỏ:</td>
-                        <td>gỗ Bạch Dương</td>
+                        <td>Kiểu dáng:</td>
+                        <td>Đứng</td>
                     </tr>
                     <tr>
                         <td>Công suất:</td>
-                        <td>200W to 500W</td>
+                        <td>60/400W</td>
                     </tr>
                     <tr>
                         <td>Trở kháng:</td>
@@ -192,19 +184,19 @@
                     </tr>
                     <tr>
                         <td>Độ nhạy(1w @1m):</td>
-                        <td>100dB SPL Nominal</td>
+                        <td>115dB</td>
                     </tr>
                     <tr>
                         <td>Tần số đáp tuyến:</td>
-                        <td>95Hz – 20kHz (+/- 6dB)</td>
+                        <td>130Hz-20kHz</td>
                     </tr>
                     <tr>
                         <td>Kích thước:</td>
-                        <td>132 x 309 x 233mm</td>
+                        <td>120x150x106 mm</td>
                     </tr>
                     <tr>
                         <td>Trọng lượng:</td>
-                        <td>6 Kg</td>
+                        <td>1,1 Kg</td>
                     </tr>
                     <tr>
                         <td>Đổi trả:</td>
@@ -212,7 +204,7 @@
                     </tr>
                     <tr>
                         <td>Xuất xứ:</td>
-                        <td>Pháp</td>
+                        <td>Đức</td>
                     </tr>
                </table>
                <button data-bs-toggle="modal" data-bs-target="#thongTinSP" class="w-100">Xem chi tiết</button>
@@ -221,7 +213,7 @@
         <footer class="row bg-black">
             <div id="footer-main" class="col-10 mx-auto">
                 <div id="logo" class="d-flex">
-                    <img src="/main/image/icon/speaker.png" width="70px" height="70px">
+                    <img src="../image/icon/speaker.png" width="70px" height="70px">
                     <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
                     <div id="footer-title">
                         <h1 style="color: orange;">SOUND</h1>
@@ -242,15 +234,15 @@
                     <table class="table">
                         <tr>
                             <td class="col-6">Mã sản phẩm:</td>
-                            <td>ID24T</td>
+                            <td>e4</td>
                         </tr>
                         <tr>
-                            <td>Chất liệu vỏ:</td>
-                            <td>gỗ Bạch Dương</td>
+                            <td>Kiểu dáng:</td>
+                            <td>Đứng</td>
                         </tr>
                         <tr>
                             <td>Công suất:</td>
-                            <td>200W to 500W</td>
+                            <td>60/400W</td>
                         </tr>
                         <tr>
                             <td>Trở kháng:</td>
@@ -258,19 +250,19 @@
                         </tr>
                         <tr>
                             <td>Độ nhạy(1w @1m):</td>
-                            <td>100dB SPL Nominal</td>
+                            <td>115dB</td>
                         </tr>
                         <tr>
                             <td>Tần số đáp tuyến:</td>
-                            <td>95Hz – 20kHz (+/- 6dB)</td>
+                            <td>130Hz-20kHz</td>
                         </tr>
                         <tr>
                             <td>Kích thước:</td>
-                            <td>132 x 309 x 233mm</td>
+                            <td>120x150x106 mm</td>
                         </tr>
                         <tr>
                             <td>Trọng lượng:</td>
-                            <td>6 Kg</td>
+                            <td>1,1 Kg</td>
                         </tr>
                         <tr>
                             <td>Đổi trả:</td>
@@ -278,7 +270,7 @@
                         </tr>
                         <tr>
                             <td>Xuất xứ:</td>
-                            <td>Pháp</td>
+                            <td>Đức</td>
                         </tr>
                     </table>
                 </div>
