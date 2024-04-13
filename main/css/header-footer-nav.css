@@ -1,11 +1,23 @@
 /* header */
-#header-main #logo{
-    text-decoration: none;
+#header-main{
     position: relative;
 }
-#header-title h1,h2{
+#header-main #login{
+    right: 40px;
+    top: 25px;
+    text-decoration: none;
+    position: absolute;
+}
+#header-main #login a{
+    color: white;
+    text-decoration: none;
+}
+#header-title h1, #header-title h2{
     display: inline-flex;
     margin-top: 18px;
+}
+#header-main #login{
+    display: inline-flex;
 }
 #header-main #logo p{
     position: absolute;
@@ -16,7 +28,7 @@
 }
 #header-search{
     height: 35px;
-    width: 50%;
+    max-width: 40%;
     background-color: white;
     margin-left: 30px;
 }
@@ -25,13 +37,19 @@
 }
 #header-icon
 {
- margin-left: 50px;
+    position: absolute;
+    right: 220px;
+    top: 18px;
 }
 /* nav */
+nav{
+    background-color: rgb(253, 250, 246);
+}
 nav .nav-item{
     margin-right: 15px;    
 }
 nav .nav-item .menu-lv-1{
+    z-index: 999;
     width: 200px;
     background-color: aliceblue;
     padding: 0;
@@ -43,6 +61,17 @@ nav .nav-item:hover .menu-lv-1{
     display: block;
 }
 /* footer */
-footer{
-
+#footer-main{
+    position: relative;
+}
+#footer-main p{
+    margin-left: 35px;
+}
+#footer-title {
+    position: absolute;
+    left: 70px;
+    top:18px;
+}
+#footer-title h1,#footer-title h2{
+    display: inline-flex;
 }

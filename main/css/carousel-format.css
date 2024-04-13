@@ -4,10 +4,6 @@
 #carousel:hover #carousel-button{
     display: block;
 }
-#carousel{
-    position: relative;
-}
-#carousel img{
-    position: relative;
+#carousel-inner .carousel-item{
     z-index: -1;
 }

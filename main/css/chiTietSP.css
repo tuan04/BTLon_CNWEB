@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    text-align: justify;
+}
+.sp-main{
+    border-bottom: 4px solid rgb(233, 233, 233); 
+}
+
+.sp-main .img-main{
+    width: 330px;
+}
+
+.thongTinSP{
+    border-left: 4px solid rgb(233, 233, 233); 
+}
+.thongTinSP table{
+    color: rgb(80, 80, 80); 
+    height: 400px; 
+    font-size: 14px;
+}
+.thongTinSP button{
+    height: 30px;
+}

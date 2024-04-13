@@ -18,6 +18,9 @@
     bottom: 0;
 
 }
+.item-name{
+    color: black;
+}
 .item-list h4{
     margin: 40px 0;
 }
