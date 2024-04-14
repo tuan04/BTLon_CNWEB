@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="../css/chiTietSP.css">
-    <link rel="stylesheet" href="../css/header-footer-nav.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <title>Adamson Point 12</title>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/chiTietSP.css">
+    <link rel="stylesheet" href="../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <title>d&b Audiotechnik E4</title>
     <style>
         [class*=col-]{
             padding: 0;
@@ -31,7 +31,7 @@
             })
             $("#slsp").change(function(){
                 let sl = $("#slsp").val();
-                let gia = 0;
+                let gia = 44117480;
                 if(!(sl == "")){
                     $("#tongTien").html(formatCurrency(gia*sl));
                 }
@@ -46,8 +46,8 @@
     <div class="container-fluid" style="position: relative;">
         <header class="row bg-black">
             <div id="header-main" class="col-10 mx-auto d-flex">
-                <a id="logo" href="../html/trangchu.html" class="d-flex" style="text-decoration: none;">
-                    <img src="../image/icon/speaker.png" width="70px" height="70px">
+                <a id="logo" href="../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
                     <p>Uy tín - Chất lượng - Giá rẻ</p>
                     <div id="header-title">
                         <h1 style="color: orange;">SOUND</h1>
@@ -56,11 +56,11 @@
                 </a>
                 <div id="header-search" class="input-group rounded-5 my-auto">
                     <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
-                    <button type="button" class="btn"><img src="../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                    <button type="button" class="btn"><img src="../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
                 </div>
                 <div id="header-icon" class="my-auto">
-                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../image/icon/bell.png" width="20px"></button>
-                    <button type="button" class="btn"><img src="../image/icon/cart.png" width="20px"></button>
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../image/icon/cart.png" width="20px"></button>
                 </div>
                 <div id="login">
                     <a href="#" class="me-2">Đăng nhập</a>
@@ -115,56 +115,49 @@
             <div class="col-8 row">
                 <div class="sp-main pb-2 col-12 row">
                     <div class="col">
-                        <img src="../image/speaker/adamson-point-12.png" class="img-main">
+                        <img src="../../image/speaker/d&b-e4.png" class="img-main">
                     </div>
                     <div class="col p-0">
-                        <h3>Loa Adamson Point 12</h3>
+                        <h3>Loa d&b Audiotechnik E4</h3>
                         <table class="table border" style="font-size: 14px;">
                             <tr>
-                                <td><img src="../image/icon/box.png" width="20px">Mã SP: <b>POINT12</b></td>
-                                <td><img src="../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
+                                <td><img src="../../image/icon/box.png" width="20px">Mã SP: <b>e4</b></td>
+                                <td><img src="../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 đôi</b></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><img src="../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">Adamson</b></td>
+                                <td colspan="2"><img src="../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">d&b Audiotechnik</b></td>
                             </tr>
                             <tr>
-                                <td><img src="../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
-                                <td><img src="../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                                <td><img src="../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
                             </tr>
                         </table>
                         <div class="row m-0">
                             <p style="width: 98px;">Số lượng:</p> 
                             <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
-                            <label style="color: red; width:auto;">Giá: <b id="tongTien">0</b>đ</label>
-                            <button class="btn btn-success py-2">Liên hệ</button>
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">44.117.880</b>đ</label>
+                            <button class="btn btn-primary py-2 mb-2">Đặt hàng ngay</button>
+                            <button class="btn btn-success py-2">Mua trả góp</button>
                         </div>
                     </div>
                 </div>
                 <div class="row my-5">
-                    <p>Trong một thị trường loa đa dạng với nhiều sự lựa chọn, loa Adamson Point 12 tỏa sáng với sức mạnh âm thanh hiện hữu. Với thiết kế kỹ thuật đầy tỉ mỉ, nó chứa đựng những công nghệ tiên tiến nhất để đảm bảo rằng mọi nốt nhạc, mọi tiết tấu đều được tái hiện một cách chân thực và sống động.</p>
-                    <h3>Loa Adamson Point 12 có cấu tạo như thế nào </h3>
-                    <p><br>Cấu tạo của loa karaoke cao cấp Adamson Point 12 xuất phát từ việc kết hợp các thành phần quan trọng như loa trầm, loa trung và loa treble. Các loa này được sắp xếp một cách chính xác bên trong vỏ loa để tạo ra một dải âm thanh đa dạng và cân đối. Loa trầm đảm nhiệm phần dưới của dải tần số, tạo ra những âm trầm mạnh mẽ mà không bị méo mó hay rè.
+                    <p>Âm thanh là một phần không thể thiếu trong cuộc sống của chúng ta. Nó có khả năng làm sống động không gian, tạo nên những cung bậc cảm xúc và đưa chúng ta vào một thế giới khác, nơi mà âm thanh trở thành ngôn ngữ chung của mọi người. Và trong hành trình khám phá âm thanh, loa d&b Audiotechnik E4 là một người bạn đồng hành đáng tin cậy.</p>
+                    <h3>Loa d&b Audiotechnik E4 nổi bật với thiết kế độc đáo </h3>
+                    <p><br>Loa karaoke cao cấp E4 được thiết kế với sự cân nhắc tỉ mỉ từng chi tiết. Với kích thước nhỏ gọn, nó có thể dễ dàng lắp đặt và di chuyển trong mọi không gian mà không gây cản trở. Điều này làm cho loa E4 trở thành một lựa chọn lý tưởng cho các sự kiện như hội nghị, buổi biểu diễn nhỏ, hay các không gian có diện tích hạn chế.
                         <br><br>
-                        Khả năng tái hiện âm thanh một cách sắc nét và chi tiết của loa Point 12 đến từ công nghệ xử lý âm thanh tiên tiến. Các bộ xử lý tín hiệu số giúp tối ưu hóa chất lượng âm thanh và đảm bảo rằng mọi nốt nhạc và tiết tấu đều được tái hiện một cách tinh tế. Điều này giúp người nghe có cảm giác như đang tham gia vào một buổi trình diễn âm nhạc trực tiếp.
-                        <br><br>
-                        Một yếu tố quan trọng khác trong cấu tạo của loa hát karaoke chuyên nghiệp Adamson Point 12 là vỏ loa. Vỏ loa được thiết kế để giảm thiểu nhiễu từ và tái phản xạ âm thanh, tạo ra môi trường âm thanh thuần túy nhất. Vật liệu và cấu trúc vỏ loa được tối ưu hóa để đảm bảo sự cân đối giữa độ cứng và độ nhẹ, từ đó tạo ra âm thanh không bị méo mó và biến dạng.
-                        <br><br>
-                        Thiết kế của loa Point 12 cũng đã được tập trung vào tính thẩm mỹ. Với vẻ ngoại hình tinh tế và hiện đại, loa này không chỉ là một thiết bị âm thanh mà còn là một tác phẩm nghệ thuật. Thiết kế đơn giản nhưng không kém phần tinh tế giúp loa Point 12 dễ dàng hòa mình vào mọi không gian.
-                        <br><br>
-                        Cấu tạo của loa cao cấp Adamson Point 12 thể hiện sự kết hợp hoàn hảo giữa công nghệ tiên tiến và thiết kế tinh tế. Từ việc sắp xếp các loa bên trong, công nghệ xử lý âm thanh đến thiết kế vỏ loa và thẩm mỹ tổng thể, mọi yếu tố đều hội tụ để tạo nên một sản phẩm âm thanh đẳng cấp, mang đến trải nghiệm nghe nhạc không thể nào quên.
+                        Bên cạnh kích thước nhỏ gọn, thiết kế của hát karaoke chuyên nghiệp E4 còn là một tác phẩm nghệ thuật đầy sáng tạo. Với các góc cạnh tinh tế và đường nét mềm mại, loa E4 thể hiện sự hài hòa giữa công nghệ và thẩm mỹ. Bề mặt bằng vật liệu chất lượng cao, kết hợp với các chi tiết kim loại sang trọng, tạo nên một vẻ ngoài đẳng cấp và đầy quyền lực.
+                        <img src="../../image/speaker/d&b-e4.png" style="width: 50%; display: block;" class="mx-auto">  
                     </p>
                     <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
                 </div>
                 <div class="row" id="docThem">
-                    <img src="../image/speaker/adamson-point-12.png" style="width: 50%; display: block;" class="mx-auto">  
-                    <h3>Loa Adamson Point 12 - Hát karaoke với tiếng hát trong trẻo, cảm xúc </h3>
-                    <p><br>Với sức mạnh của loa Adamson Point 12, việc hát karaoke trở nên sống động hơn bao giờ hết. Khả năng tái hiện âm thanh chân thực và sắc nét của loa mang đến một trải nghiệm như thể bạn đang biểu diễn trên sân khấu. Tiếng hát của bạn sẽ được truyền tải một cách sống động và tự nhiên, tạo nên một bữa tiệc âm nhạc thú vị.
+                    <h3>Loa d&b Audiotechnik E4 - Sự chuyên nghiệp đến từ chất âm </h3>
+                    <p><br>Sự chuyên nghiệp của loa hát karaoke cao cấp E4 không chỉ xuất phát từ chất âm tuyệt vời mà còn từ khả năng tương thích và linh hoạt của nó. Với thiết kế đa dạng và khả năng kết hợp với các hệ thống âm thanh khác, loa E4 là lựa chọn lý tưởng cho mọi không gian và sự kiện. Từ các buổi biểu diễn trực tiếp đến các hội nghị quy mô nhỏ, loa E4 luôn đáp ứng mọi yêu cầu và tạo nên một trải nghiệm âm thanh đáng nhớ.
                         <br><br>
-                        Công nghệ xử lý âm thanh tiên tiến của loa hát karaoke hay nhất Point 12 cũng đóng một vai trò quan trọng trong việc tạo ra trải nghiệm karaoke tuyệt vời. Các bộ xử lý tín hiệu số giúp tối ưu hóa âm thanh từng nốt nhạc, từng giai điệu. Điều này đồng nghĩa với việc tiếng hát của bạn sẽ được phát ra một cách sắc nét, không bị méo mó hay nhiễu từ, giúp bạn thể hiện tốt nhất khả năng ca hát.
+                        Không chỉ đơn thuần là một công cụ âm nhạc, loa chuyên nghiệp cao cấp E4 còn là một biểu tượng của sự chuyên nghiệp và chất lượng cao. Thiết kế tinh tế với chất liệu chất lượng cao, loa E4 tạo nên một vẻ đẹp đầy lôi cuốn và đẳng cấp. Bề mặt mịn màng và các chi tiết kim loại sang trọng mang lại một cái nhìn thật ấn tượng và đẳng cấp cho loa E4.
                         <br><br>
-                        Một điểm đáng chú ý khác của loa Adamson Point 12 là khả năng tạo ra không gian âm thanh mở rộ. Khi bạn hát karaoke qua loa này, tiếng hát của bạn sẽ lan tỏa đều trong không gian, tạo ra cảm giác như bạn đang biểu diễn trên sân khấu lớn. Điều này không chỉ tạo nên trải nghiệm âm nhạc tuyệt vời mà còn tăng thêm sự tự tin và phấn khích khi hát karaoke.
-                        <img src="../image/information/point12-infor.png"style="width: 50%; display: block;" class="mx-auto">
-                    </p>    
+                        Với loa d&b Audiotechnik E4, sự chuyên nghiệp không chỉ là một khái niệm mà là sự hiện thực hóa thông qua chất âm vượt trội và thiết kế đẳng cấp. Loa cao cấp E4 được xây dựng để đáp ứng những yêu cầu cao nhất của các chuyên gia âm thanh và người yêu âm nhạc.</p>
                         <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
                 </div>
             </div>
@@ -175,15 +168,15 @@
                     </tr>
                     <tr>
                         <td class="col-6">Mã sản phẩm:</td>
-                        <td>Point 12</td>
+                        <td>e4</td>
                     </tr>
                     <tr>
-                        <td>Chất liêu:</td>
-                        <td>gỗ Bạch Dương</td>
+                        <td>Kiểu dáng:</td>
+                        <td>Đứng</td>
                     </tr>
                     <tr>
                         <td>Công suất:</td>
-                        <td>61/2440 Watts</td>
+                        <td>60/400W</td>
                     </tr>
                     <tr>
                         <td>Trở kháng:</td>
@@ -191,27 +184,27 @@
                     </tr>
                     <tr>
                         <td>Độ nhạy(1w @1m):</td>
-                        <td>132,5 dB</td>
+                        <td>115dB</td>
                     </tr>
                     <tr>
                         <td>Tần số đáp tuyến:</td>
-                        <td>60 Hz đến 18 kHz</td>
-                    </tr>
-                    <tr>
-                        <td>Góc phủ âm (Ngang x Dọc):</td>
-                        <td>60° x 40°, 90° x 60°, 40° x 20° (có thể xoay)</td>
+                        <td>130Hz-20kHz</td>
                     </tr>
                     <tr>
                         <td>Kích thước:</td>
-                        <td>Rộng 353mm x Cao 642mm x Sâu 310mm</td>
+                        <td>120x150x106 mm</td>
                     </tr>
                     <tr>
                         <td>Trọng lượng:</td>
-                        <td>22,5 kg</td>
+                        <td>1,1 Kg</td>
                     </tr>
                     <tr>
                         <td>Đổi trả:</td>
                         <td>MIỄN PHÍ trong 15 ngày lỗi SX</td>
+                    </tr>
+                    <tr>
+                        <td>Xuất xứ:</td>
+                        <td>Đức</td>
                     </tr>
                </table>
                <button data-bs-toggle="modal" data-bs-target="#thongTinSP" class="w-100">Xem chi tiết</button>
@@ -220,7 +213,7 @@
         <footer class="row bg-black">
             <div id="footer-main" class="col-10 mx-auto">
                 <div id="logo" class="d-flex">
-                    <img src="../image/icon/speaker.png" width="70px" height="70px">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
                     <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
                     <div id="footer-title">
                         <h1 style="color: orange;">SOUND</h1>
@@ -241,15 +234,15 @@
                     <table class="table">
                         <tr>
                             <td class="col-6">Mã sản phẩm:</td>
-                            <td>Point 12</td>
+                            <td>e4</td>
                         </tr>
                         <tr>
-                            <td>Chất liêu:</td>
-                            <td>gỗ Bạch Dương</td>
+                            <td>Kiểu dáng:</td>
+                            <td>Đứng</td>
                         </tr>
                         <tr>
                             <td>Công suất:</td>
-                            <td>61/2440 Watts</td>
+                            <td>60/400W</td>
                         </tr>
                         <tr>
                             <td>Trở kháng:</td>
@@ -257,31 +250,27 @@
                         </tr>
                         <tr>
                             <td>Độ nhạy(1w @1m):</td>
-                            <td>132,5 dB</td>
+                            <td>115dB</td>
                         </tr>
                         <tr>
                             <td>Tần số đáp tuyến:</td>
-                            <td>60 Hz đến 18 kHz</td>
-                        </tr>
-                        <tr>
-                            <td>Góc phủ âm (Ngang x Dọc):</td>
-                            <td>60° x 40°, 90° x 60°, 40° x 20° (có thể xoay)</td>
+                            <td>130Hz-20kHz</td>
                         </tr>
                         <tr>
                             <td>Kích thước:</td>
-                            <td>Rộng 353mm x Cao 642mm x Sâu 310mm</td>
+                            <td>120x150x106 mm</td>
                         </tr>
                         <tr>
                             <td>Trọng lượng:</td>
-                            <td>22,5 kg</td>
+                            <td>1,1 Kg</td>
                         </tr>
                         <tr>
                             <td>Đổi trả:</td>
                             <td>MIỄN PHÍ trong 15 ngày lỗi SX</td>
                         </tr>
                         <tr>
-                            <td>Xuất sứ:</td>
-                            <td>Canada</td>
+                            <td>Xuất xứ:</td>
+                            <td>Đức</td>
                         </tr>
                     </table>
                 </div>
