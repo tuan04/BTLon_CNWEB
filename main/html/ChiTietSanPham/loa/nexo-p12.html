@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <link rel="stylesheet" href="../../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <title>Loa kiểm âm Nexo P12</title>
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+            $("#slsp").change(function(){
+                let sl = $("#slsp").val();
+                let gia = 99603900;
+                if(!(sl == "")){
+                    $("#tongTien").html(formatCurrency(gia*sl));
+                }
+                else{
+                    $("#tongTien").html(formatCurrency(gia));
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row col-10 mx-auto">
+            <div class="col-8 row">
+                <div class="pb-2 col-12 row sp-main">
+                    <div class="col">
+                        <img src="../../../image/speaker/moniter-nexo-p12.png" class="img-main">
+                    </div>
+                    <div class="col p-0">
+                        <h3>Loa Kiểm Âm Nexo P12 ( Monitor )</h3>
+                        <table class="table border" style="font-size: 14px;">
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>P12</b></td>
+                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">Nexo</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                            </tr>
+                        </table>
+                        <div class="row m-0">
+                            <p style="width: 98px;">Số lượng:</p> 
+                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">99.603.900</b>đ</label>
+                            <button class="btn btn-primary py-2 mb-2">Đặt hàng</button>
+                            <button class="btn btn-success py-2">Mua trả góp</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <p>Loa kiểm âm là một phần không thể thiếu trong bộ công cụ của mọi người làm việc trong ngành âm nhạc và âm thanh. Chính nhờ chúng, chúng ta có thể đảm bảo rằng mọi âm thanh được trình bày hoàn hảo và chất lượng. Trong thế giới của âm thanh chuyên nghiệp, một cái tên không thể không nhắc đến khi nói về loa kiểm âm là Nexo P12 Monitor. Được thiết kế và sản xuất bởi một trong những tên tuổi uy tín trong ngành công nghiệp âm thanh, Nexo P12 Monitor đã khẳng định vị thế của mình như một giải pháp tối ưu cho việc kiểm âm chính xác và chất lượng trong môi trường chuyên nghiệp. Trong bài viết này, chúng ta sẽ tìm hiểu về những điểm mạnh và tính năng độc đáo của Nexo P12 Monitor, cũng như cách nó có thể nâng cao chất lượng của các dự án âm thanh của bạn.
+                        <br>
+                    </p>
+                    <h3>ĐẶC ĐIỂM NỔI BẬT SẢN PHẨM</h3>
+                    <p>
+                        Nexo P12 Monitor nổi bật với khả năng tái tạo âm thanh một cách hoàn hảo. Với dải tần số rộng từ bass mạnh mẽ đến treble sắc nét, loa này cung cấp âm thanh đáng kinh ngạc với sự chi tiết và sự rõ ràng không giới hạn.
+                        <br><br>
+                        Nexo đã tích hợp nhiều công nghệ tiên tiến vào P12 Monitor, bao gồm hệ thống loa LF neodymium và HF driver titanium. Điều này giúp nâng cao chất lượng âm thanh và độ bền của sản phẩm.
+                        <img src="../../../image/speaker/moniter-nexo-p12.png" style="width: 50%; display: block;" class="mx-auto mb-2"> 
+                    </p>
+                <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                </div>
+                <div class="row" id="docThem">
+                    <p>
+                        Nexo đã đặt sự chú ý đặc biệt vào thiết kế của P12 Monitor. Với vỏ ngoài bằng gỗ và sự kết hợp hoàn hảo giữa chức năng và thẩm mỹ, nó không chỉ cung cấp hiệu suất âm thanh tuyệt vời mà còn là một tác phẩm nghệ thuật trong thế giới của âm thanh.
+                        <br><br>
+                        Nexo P12 Monitor có khả năng hoạt động ở nhiều môi trường âm thanh khác nhau, từ phòng thu chuyên nghiệp đến sân khấu biểu diễn trực tiếp. Điều này làm cho nó trở thành sự lựa chọn đáng tin cậy cho các chuyên gia âm thanh.
+                        <br><br>           
+                        Nexo P12 Monitor thực sự là một bước tiến đáng kể trong việc kiểm âm và tái tạo âm thanh chất lượng cao. Với các đặc điểm nổi bật như chất lượng âm thanh xuất sắc, thiết kế đẹp mắt, tính linh hoạt và độ tin cậy, nó đã chinh phục cả những người yêu thích âm nhạc khó tính nhất và trở thành một biểu tượng trong ngành công nghiệp âm thanh chuyên nghiệp.
+                    <br> <br>   <img src="../../../image/information/monitor-p12-infor.png" style="width: 100%; display: block;" class="mx-auto">
+                    </p>
+                        <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+                </div>
+            </div>
+            <div class="thongTinSP col ms-1" >
+               <table class="table">
+                    <tr>
+                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
+                    </tr>
+                    <tr>
+                        <td class="col-6">Mã sản phẩm:</td>
+                        <td>P12</td>
+                    </tr>
+                    <tr>
+                        <td>Kiểu Dáng:</td>
+                        <td>Ngang</td>
+                    </tr>
+                    <tr>
+                        <td>Chất liệu vỏ:</td>
+                        <td>gỗ Bạch Dương</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất:</td>
+                        <td>Active: (800 to 1250 W LF + 400 to 630 W HF) / Passive: 800 to 1250 W</td>
+                    </tr>
+                    <tr>
+                        <td>Trở kháng:</td>
+                        <td>8ohm</td>
+                    </tr>
+                    <tr>
+                        <td>Độ nhạy(1w @1m):</td>
+                        <td>107 dB</td>
+                    </tr>
+                    <tr>
+                        <td>Tần số đáp tuyến:</td>
+                        <td>60 Hz - 20 kHz</td>
+                    </tr>
+                    <tr>
+                        <td>Góc phủ âm (Ngang x Dọc):</td>
+                        <td>60°x60° - 90°x40° - Asymmetrical Dispersion 60° to 100°x40°</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước:</td>
+                        <td>531mm x 432mm x 317mm</td>
+                    </tr>
+                    <tr>
+                        <td>Trọng lượng:</td>
+                        <td>20 kg</td>
+                    </tr>
+               </table>
+               <button data-bs-toggle="modal" data-bs-target="#thongTinSP" class="w-100">Xem chi tiết</button>
+            </div>
+        </div>
+        <footer class="row bg-black">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="thongTinSP">
+        <div class="modal-dialog">
+            <div class="modal-content mx-auto" style="width: 600px">
+                <div class="modal-header fw-bold">
+                    Thông số kỹ thuật chi tiết
+                    <button class="btn-close" data-bs-toggle="close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <td class="col-6">Mã sản phẩm:</td>
+                            <td>P12</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểu Dáng:</td>
+                            <td>Ngang</td>
+                        </tr>
+                        <tr>
+                            <td>Chất liệu vỏ:</td>
+                            <td>gỗ Bạch Dương</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất:</td>
+                            <td>Active: (800 to 1250 W LF + 400 to 630 W HF) / Passive: 800 to 1250 W</td>
+                        </tr>
+                        <tr>
+                            <td>Trở kháng:</td>
+                            <td>8ohm</td>
+                        </tr>
+                        <tr>
+                            <td>Độ nhạy(1w @1m):</td>
+                            <td>107 dB</td>
+                        </tr>
+                        <tr>
+                            <td>Tần số đáp tuyến:</td>
+                            <td>60 Hz - 20 kHz</td>
+                        </tr>
+                        <tr>
+                            <td>Góc phủ âm (Ngang x Dọc):</td>
+                            <td>60°x60° - 90°x40° - Asymmetrical Dispersion 60° to 100°x40°</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>531mm x 432mm x 317mm</td>
+                        </tr>
+                        <tr>
+                            <td>Trọng lượng:</td>
+                            <td>20 kg</td>
+                        <tr>
+                            <td>Đổi trả:</td>
+                            <td>MIỄN PHÍ trong 15 ngày lỗi SX</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất xứ:</td>
+                            <td>Pháp</td>
+                        </tr>
+                        <tr>
+                            <td>SPL Peak:</td>
+                            <td>138dB Peak (Passive mode) / 140dB Peak (Active mode)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

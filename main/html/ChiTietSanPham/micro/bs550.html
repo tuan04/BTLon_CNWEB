@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <link rel="stylesheet" href="../../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <title>Micro Karaoke Baiervires BS550</title>
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+            $("#slsp").change(function(){
+                let sl = $("#slsp").val();
+                let gia = 6390000;
+                if(!(sl == "")){
+                    $("#tongTien").html(formatCurrency(gia*sl));
+                }
+                else{
+                    $("#tongTien").html(formatCurrency(gia));
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row col-10 mx-auto">
+            <div class="col-8 row">
+                <div class="sp-main pb-2 col-12 row">
+                    <div class="col">
+                        <img src="../../../image/micro/bs550.png" class="img-main">
+                    </div>
+                    <div class="col p-0">
+                        <h3>Micro Karaoke Baiervires BS550</h3>
+                        <table class="table border" style="font-size: 14px;">
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>BS-550</b></td>
+                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">Baiervires</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                            </tr>
+                        </table>
+                        <div class="row m-0">
+                            <p style="width: 98px;">Số lượng:</p> 
+                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">6.390.000</b>đ</label>
+                            <button class="btn btn-primary py-2 mb-2">Đặt hàng ngay</button>
+                            <button class="btn btn-success py-2">Mua trả góp</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <p>
+                        Micro Baiervires BS550 là micro thuộc thương hiệu Baiervires số 1 tại China. Đây là thương hiệu chuyên sản xuất micro phân khúc cao cấp cho thị trường nội địa. Ta không thể phủ nhận được rằng hàng nội địa TQ có chất lượng vô cùng tốt, thậm chí có thể sánh ngang với những hàng Châu Âu.Micro được thiết kế nhỏ gọn, có tính năng lọc âm tốt, chống hú hiệu quả. Với công nghệ sản xuất tiên tiến hiện đại, các linh kiện được nhà hãng lựa chọn khắt khe qua nhiều bước kiểm nghiệm, đảm bảo hoạt động bền bỉ. Đây là sự lựa chọn tốt nhất cho các phòng karaoke gia đình cao cấp, karaoke chuyên nghiệp.
+                        <img src="../../../image/dsp/vinal-x3.png" style="width: 50%;"class="row mx-auto">
+                    </p>
+                    <button id="btnDocThem" class="row btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                </div>
+                <div class="row mx-auto mt-1" id="docThem">
+                    <p>
+                        Trên đây là bộ sản phẩm Baiervires BS550 đang được bày bán tại showroom của SoundShop. Hãy đến để cùng trải nghiệm và mua sắm các sản phẩm phù hợp. Nếu có thắc mắc về sản phẩm hãy gọi đến hotline để được giải đáp thắc mắc và tư vấn về sản phẩm.
+                    </p>
+                    <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+                </div>
+            </div>
+            <div class="thongTinSP col ms-1">
+               <table class="table">
+                    <tr>
+                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
+                    </tr>
+                    <tr><td>Không có thông tin</td></tr>
+               </table>
+            </div>
+        </div>
+        <footer class="row bg-black">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>

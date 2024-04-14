@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đẩy công suất (Main)</title>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/danhMucSP.css">
+    <link rel="stylesheet" href="../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav style="background-color: rgb(253, 250, 246);" class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class=" row gap-2 col-10 mx-auto item-list">
+            <h3>Tất cả dòng đẩy</h3>
+            <div class="row gap-2 mx-auto">
+                <a href="../ChiTietSanPham/main-cs/4acoustic-sq1200.html" class="item rounded-3 col">
+                    <img src="../../image/main-cs/4acoustic_sq1200.png" class="row mx-auto">
+                    <div class="item-title">
+                        <p class="item-name">Công Suất 2 Kênh 4Acoustic SQ1200</p>
+                        <p class="item-price">12.500.000₫</p>
+                    </div>
+                </a>
+                <a href="../ChiTietSanPham/main-cs/d&b-5d.html" class="item rounded-3 col">
+                    <img src="../../image/main-cs/d&b-5d.png" class="row mx-auto">
+                    <div class="item-title">
+                        <div class="item-title">
+                            <p class="item-name">ampli d&b Audiotechnik 5D</p>
+                            <p class="item-price">64.000.000₫</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../ChiTietSanPham/main-cs/d&b-d80.html" class="item rounded-3 col">
+                    <img src="../../image/main-cs/d&b-d80.png" class="row mx-auto">
+                    <div class="item-title">
+                        <div class="item-title">
+                            <p class="item-name">Amplifier d&b Audiotechnik D80</p>
+                            <p class="item-price">Giá liên hệ</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../ChiTietSanPham/main-cs/fu600.html" class="item rounded-3 col">
+                    <img src="../../image/main-cs/kuledi-fu600.png" class="row mx-auto">
+                    <div class="item-title">
+                        <div class="item-title">
+                            <p class="item-name">Công Suất Liền Vang Số Kuledy FU600</p>
+                            <p class="item-price">13.000.000₫</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../ChiTietSanPham/main-cs/nexo-dtd-4x1-3.html" class="item rounded-3 col">
+                    <img src="../../image/main-cs/nexo-dtd-4x1_3.png" class="row mx-auto">
+                    <div class="item-title">
+                        <div class="item-title">
+                            <p class="item-name">Cục Đẩy 1U Nexo DTD AMP 4X1.3</p>
+                            <p class="item-price">65.151.900₫</p>
+                        </div>
+                    </div>
+                </a>
+            </div> 
+            <div class="row gap-2 mx-auto">
+                <a href="../ChiTietSanPham/main-cs/nexo-nxamp4x4-mk2.html" class="item rounded-3" style="width: 19.45%;">
+                    <img src="../../image/main-cs/nexo-nxamp4x4-mk2.png" class="row mx-auto">
+                    <div class="item-title">
+                        <p class="item-name">Amplifier Nexo NXAMP4X4 MK2</p>
+                        <p class="item-price">429.679.800₫</p>
+                    </div>
+                </a>
+            </div> 
+        </div>
+        <div class="row col-10 mx-auto mt-4">
+            <p>Cục đẩy công suất là một thiết bị không thể thiếu trong một hệ thống âm thanh karaoke chuyên nghiệp. Nó giúp tăng cường tín hiệu âm thanh và đẩy tín hiệu đó qua loa, giúp cho âm thanh phát ra được to và rõ nét hơn. Cục công suất thường có nhiều đầu vào và đầu ra, cho phép người sử dụng kết nối nhiều loại thiết bị âm thanh khác nhau, như micro, mixer, đầu đĩa CD, hoặc đầu phát DVD. Nó cũng có khả năng điều chỉnh âm lượng và tần số, giúp người sử dụng điều chỉnh âm thanh phù hợp với môi trường và nhu cầu sử dụng. Công suất hiện nay thường được trang bị các tính năng hiện đại, như bảo vệ quá tải, bảo vệ quá nhiệt, và giảm nhiễu, giúp cho việc sử dụng an toàn và đảm bảo chất lượng âm thanh tốt nhất.</p>
+            <h3>Khách hàng mua cục đẩy sẽ có nhiều sự lựa chọn </h3>
+            <p>Chúng ta đều biết rằng cục công suất là một thiết bị không thể thiếu trong các hệ thống âm thanh chuyên nghiệp, đặc biệt trong các dàn karaoke. Với nhiều tính năng và</p>
+            <button id="btnDocThem" class="row btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+        </div>
+        <div class="row col-10 mx-auto" id="docThem">
+            <p>hiệu suất tốt, cục đẩy đã được nhiều người yêu nhạc và chuyên gia âm thanh tin dùng. Hiện nay, trên thị trường có rất nhiều mẫu mã cục đẩy công suất khác nhau, từ các sản phẩm tiêu chuẩn cho đến các sản phẩm cao cấp.
+            </p>
+            <h3>Cục đẩy công suất khuyếch đại âm thanh hiệu quả </h3>
+            <p><br>
+            Việc sử dụng cục đẩy công suất khuyếch đại âm thanh hiệu quả không chỉ tăng cường trải nghiệm giải trí mà còn giúp giữ gìn sức khỏe của người dùng. Khi âm thanh mạnh mẽ và rõ ràng, người dùng không cần phải tăng âm lượng quá cao, giúp tránh được những ảnh hưởng xấu đến thính giác của họ. Vì vậy, việc sử dụng cục đẩy công suất khuyếch đại âm thanh hiệu quả là một trong những yếu tố quan trọng để tạo ra một không gian âm nhạc chuyên nghiệp và an toàn cho sức khỏe người dùng.
+                <br><br>
+            Các cục đẩy hiện nay được trang bị nhiều tính năng và công nghệ mới nhất, giúp tăng cường hiệu suất và chất lượng âm thanh. Với độ phân giải cao và khả năng xử lý tín hiệu tốt, cục đẩy công suất khuyếch đại âm thanh hiệu quả, giúp người dùng có thể tận dụng tối đa khả năng của loa và các thiết bị âm thanh khác, đồng thời giảm thiểu các tạp âm và nhiễu.
+            <img src="../../image/danhMucInfor/main-infor.png" style="width: 80%;"class="row mx-auto">
+            </p>
+            <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+        </div>
+    </div>
+        <footer class="row bg-black mt-3">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>  

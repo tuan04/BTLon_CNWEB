@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <link rel="stylesheet" href="../../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <title>Nexo ID84</title>
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+            $("#slsp").change(function(){
+                let sl = $("#slsp").val();
+                let gia = 96767000;
+                if(!(sl == "")){
+                    $("#tongTien").html(formatCurrency(gia*sl));
+                }
+                else{
+                    $("#tongTien").html(formatCurrency(gia));
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row col-10 mx-auto">
+            <div class="col-8 row">
+                <div class="pb-2 col-12 row sp-main">
+                    <div class="col">
+                        <img src="../../../image/speaker/nexo-id84.png" class="img-main">
+                    </div>
+                    <div class="col p-0">
+                        <h3>Loa Nexo ID84</h3>
+                        <table class="table border" style="font-size: 14px;">
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>ID84</b></td>
+                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 đôi</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">Nexo</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                            </tr>
+                        </table>
+                        <div class="row m-0">
+                            <p style="width: 98px;">Số lượng:</p> 
+                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">96.767.000</b>đ</label>
+                            <button class="btn btn-primary py-2 mb-2">Đặt hàng ngay</button>
+                            <button class="btn btn-success py-2">Mua trả góp</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <p>Khi nói đến công nghệ âm thanh chất lượng cao, loa Nexo ID84 là một trong những sản phẩm đáng chú ý. Với sự kết hợp hoàn hảo giữa công nghệ tiên tiến và hiệu suất âm thanh ấn tượng, loa này mang đến trải nghiệm nghe nhạc đích thực và sự hòa quyện hoàn hảo trong không gian âm thanh.</p>
+                    <h3>Loa Nexo ID84 có đặc điểm gì nổi bật </h3>
+                    <p><br>Loa Nexo ID84 có nhiều đặc điểm nổi bật. Dưới đây là một số điểm đáng chú ý về loa Nexo ID84:
+                        <br><br>
+                        Loa ID84 tái tạo âm thanh chất lượng cao với độ chi tiết và sắc nét tuyệt vời. Với cấu tạo ba đường tiếng, loa bass mạnh mẽ, loa trung chính xác và loa treble sắc nét, loa Nexo ID84 mang đến trải nghiệm âm thanh sống động và chân thực.
+                        <br><br>
+                        Nexo ID84 được thiết kế để phù hợp với nhiều ứng dụng âm thanh khác nhau. Với khả năng xếp chồng và treo lắp, loa này có thể được sử dụng trong các sự kiện âm nhạc trực tiếp, hội trường, nhà thờ, nhà hát, quán bar và nhiều không gian khác.
+                        <img src="../../../image/speaker/nexo-id84.png" style="width: 50%; display: block;" class="mx-auto">  
+                    </p>
+                <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                </div>
+                <div class="row" id="docThem">
+                    <h3>Loa Nexo ID84 có cấu tạo như thế nào</h3>
+                    <p><br>Loa Nexo ID84 có cấu tạo chất lượng và được thiết kế một cách công phu để đạt hiệu suất âm thanh tối ưu. Dưới đây là mô tả về cấu tạo của loa Nexo ID84:
+                        <br><br>
+                        Nexo ID84 có một loa bass kích thước lớn, được thiết kế để tái tạo âm trầm mạnh mẽ và sâu lắng. Loa bass đảm bảo rằng các giai điệu bass trong âm nhạc được tái hiện một cách rõ ràng và mạnh mẽ.
+                        <br><br>
+                        Loa trung của ID84 tái tạo âm thanh trung thực và chính xác. Nó phát lại các âm trung gian, bao gồm giọng hát và các nhạc cụ như guitar hoặc piano, với độ chi tiết cao và sự sắc nét.
+                        <br><br>
+                        <img src="../../../image/information/id84-infor.png" style="width: 100%; display: block;" class="mx-auto">
+                        <p><br>
+                            Loa treble của Nexo ID84 phụ trách phát lại các tần số cao và chi tiết trong âm thanh. Nó tạo ra các âm thanh cao sắc nét và giúp tái hiện các chi tiết âm nhạc tinh tế như những ngọn điệu nhẹ nhàng hay âm thanh trầm lắng.
+                            <br><br>
+                            Loa Nexo ID84 được trang bị công nghệ xử lý tín hiệu số tiên tiến để tối ưu hóa hiệu suất âm thanh. Hệ thống xử lý tín hiệu giúp điều chỉnh và cân chỉnh âm thanh một cách chính xác, đảm bảo âm thanh trung thực và đồng bộ.
+                            <br><br>
+                            Vỏ loa của Nexo ID84 được làm bằng vật liệu chất lượng cao và có thiết kế chắc chắn để đảm bảo độ bền và ổn định trong quá trình sử dụng. Thiết kế vỏ loa cũng được tối ưu hóa để giảm thiểu rung động và các tác động âm thanh không mong muốn.
+                            <br><br>
+                            Nexo ID84 có cấu tạo chất lượng với loa bass mạnh mẽ, loa trung chính xác, loa treble sắc nét và hệ thống xử lý tín hiệu tiên tiến. Thiết kế vỏ loa chắc chắn và tối ưu giúp loa hoạt động ổn định và đáng tin cậy. Tất cả những yếu tố này đóng góp vào việc tạo ra trải nghiệm âm thanh tuyệt vời và hiệu suất ấn tượng của loa Nexo ID84.
+                        </p>
+                    </p>
+                        <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+                </div>
+            </div>
+            <div class="thongTinSP col ms-1" >
+               <table class="table">
+                    <tr>
+                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
+                    </tr>
+                    <tr>
+                        <td class="col-6">Cấu tạo:</td>
+                        <td>Loa cột</td>
+                    </tr>
+                    <tr>
+                        <td>Mã sản phẩm:</td>
+                        <td>ID84</td>
+                    </tr>
+                    <tr>
+                        <td>Kiểu Dáng:</td>
+                        <td>Đứng</td>
+                    </tr>
+                    <tr>
+                        <td>Chất liệu vỏ:</td>
+                        <td>gỗ Bạch Dương</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất:</td>
+                        <td>650 đến 1080 Watt / 4Ω</td>
+                    </tr>
+                    <tr>
+                        <td>Trở kháng:</td>
+                        <td>4ohm</td>
+                    </tr>
+                    <tr>
+                        <td>Độ nhạy(1w @1m):</td>
+                        <td>105dB</td>
+                    </tr>
+                    <tr>
+                        <td>Tần số đáp tuyến:</td>
+                        <td>90 Hz đến 20 kHz</td>
+                    </tr>
+                    <tr>
+                        <td>Góc phủ âm (Ngang x Dọc):</td>
+                        <td>Vertical: +0°/-10° (Narrow Mode) or +0°/-25° (Wide mode) | Horizontal: 100°</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước:</td>
+                        <td>990mm x 150mm x 215 mm (39.0" x 5.9" x 8.5")</td>
+                    </tr>
+               </table>
+               <button data-bs-toggle="modal" data-bs-target="#thongTinSP" class="w-100">Xem chi tiết</button>
+            </div>
+        </div>
+        <footer class="row bg-black">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="thongTinSP">
+        <div class="modal-dialog">
+            <div class="modal-content mx-auto" style="width: 600px">
+                <div class="modal-header fw-bold">
+                    Thông số kỹ thuật chi tiết
+                    <button class="btn-close" data-bs-toggle="close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <td class="col-6">Cấu tạo:</td>
+                            <td>Loa cột</td>
+                        </tr>
+                        <tr>
+                            <td>Mã sản phẩm:</td>
+                            <td>ID84</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểu Dáng:</td>
+                            <td>Đứng</td>
+                        </tr>
+                        <tr>
+                            <td>Chất liệu vỏ:</td>
+                            <td>gỗ Bạch Dương</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất:</td>
+                            <td>650 đến 1080 Watt / 4Ω</td>
+                        </tr>
+                        <tr>
+                            <td>Trở kháng:</td>
+                            <td>4ohm</td>
+                        </tr>
+                        <tr>
+                            <td>Độ nhạy(1w @1m):</td>
+                            <td>105dB</td>
+                        </tr>
+                        <tr>
+                            <td>Tần số đáp tuyến:</td>
+                            <td>90 Hz đến 20 kHz</td>
+                        </tr>
+                        <tr>
+                            <td>Góc phủ âm (Ngang x Dọc):</td>
+                            <td>Vertical: +0°/-10° (Narrow Mode) or +0°/-25° (Wide mode) | Horizontal: 100°</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>990mm x 150mm x 215 mm (39.0" x 5.9" x 8.5")</td>
+                        </tr>
+                        <tr>
+                            <td>Trọng lượng:</td>
+                            <td>15 kg (33 lbs)</td>
+                        </tr>
+                        <tr>
+                            <td>Đổi trả:</td>
+                            <td>MIỄN PHÍ trong 15 ngày lỗi SX</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất xứ:</td>
+                            <td>Pháp</td>
+                        </tr>
+                        <tr>
+                            <td>SPL Peak:</td>
+                            <td>135 dB</td>
+                        </tr>
+                        <tr>
+                            <td>Tần số chéo:</td>
+                            <td>90Hz, 120Hz</td>
+                        </tr>
+                        <tr>
+                            <td>Phạm vi nhiệt độ hoạt động:</td>
+                            <td>0°C - 40°C (32°F - 104°F)</td>
+                        </tr>
+                        <tr>
+                            <td>Phạm vi nhiệt độ bảo quản:</td>
+                            <td>-20°C - 60°C (-4°F - 140°F)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

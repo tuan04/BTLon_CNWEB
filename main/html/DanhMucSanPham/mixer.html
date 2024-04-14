@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixer - Bàn trộn âm thanh</title>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/danhMucSP.css">
+    <link rel="stylesheet" href="../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav style="background-color: rgb(253, 250, 246);" class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class=" row gap-2 col-10 mx-auto item-list">
+            <h3>Tất cả mixer</h3>
+            <div class="row gap-2 mx-auto">
+                <a href="../ChiTietSanPham/mixer/allen&heath-sq6.html" class="item rounded-3" style="width: 20%;">
+                    <img src="../../image/mixer/allen&heath-sq6.png" class="row mx-auto">
+                    <div class="item-title">
+                        <p class="item-name">Bàn Mixer Allen & Heath SQ6</p>
+                        <p class="item-price">135.829.883₫</p>
+                    </div>
+                </a>
+                <a href="../ChiTietSanPham/mixer/allen&heath-sq7.html" class="item rounded-3" style="width: 20%;">
+                    <img src="../../image/mixer/allen&heath-sq7.png" class="row mx-auto">
+                    <div class="item-title">
+                        <div class="item-title">
+                            <p class="item-name">Bàn Mixer Allen & Heath SQ6</p>
+                            <p class="item-price">135.829.883₫</p>
+                        </div>
+                    </div>
+                </a>
+            </div> 
+        </div>
+        <div class="row col-10 mx-auto mt-4">
+            <p>Mixer còn được gọi với cái tên khác là bàn mixer, bàn trộn âm thanh, thiết bị này cho phép người dùng điều chỉnh hiệu ứng, cân bằng âm sắc, phối trộn tín hiệu để tạo ra một nguồn âm thanh hoàn hảo nhất. Mixer có thể nhận tín hiệu âm thanh đầu vào từ đầu phát nhạc, các loại nhạc cụ, nhạc đệm, micro, hay một số thiết bị điện tử khác.</p>
+            <p>
+                Bàn mixer được ví như linh hồn, là trái tim, là bộ não điều khiển cả hệ thống hoạt động, thiếu đi mixer, là một thiếu xót lớn cho dàn âm thanh chuyên nghiệp. 
+               <br><br> <img src="../../image/danhMucInfor/mixer-dm1.png" style="width: 70%;"class="row mx-auto">
+            </p>
+            <button id="btnDocThem" class="row btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+        </div>
+        <div class="row col-10 mx-auto mt-4" id="docThem">
+            <h3>CÁC LOẠI MIXER</h3>
+            <p><b>Mixer analog:</b> đây là dòng mixer truyền thống, sử dụng các linh kiện điện tử để phối trộn và xử lý âm thanh. Dòng sản phẩm này được sử dụng khá nhiều trong các phòng thu âm, hiệu quả xử lý âm thanh tốt, giá thành rẻ.
+                <br><br><b>Mixer analog vận hành theo kỹ thuật dịgital:</b> là dòng mixer sử dụng kỹ thuật số (digital) để xử lý âm thanh, nhưng vẫn dựa trên nguyên tác của kỹ thuật analog.
+                <br><br><b>Mixer digital:</b> xử lý âm thanh dựa trên kỹ thuật số digital hoàn toàn, dựa trên nguyên tắc hoạt động của DSP, bộ trộn âm thanh này được điều chỉnh thông qua giao diện phần mềm được cài đặt trên máy tính mà nhà sản xuất cung cấp. Cho phép can thiệp sâu vào các dải tần số âm thanh, băng thông, độ nhạy để mang đến tín hiệu âm thanh hoàn hảo, mượt mà, êm ái nhất. Đây là dòng mixer được áp dụng công nghệ hiện đại nhất so với các dòng còn lại.
+            </p>
+            <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+        </div>
+    </div>
+        <footer class="row bg-black mt-3">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>  

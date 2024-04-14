@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <link rel="stylesheet" href="../../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <title>Amplifier d&b Audiotechnik D80</title>
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+            $("#slsp").change(function(){
+                let sl = $("#slsp").val();
+                let gia = 0;
+                if(!(sl == "")){
+                    $("#tongTien").html(formatCurrency(gia*sl));
+                }
+                else{
+                    $("#tongTien").html(formatCurrency(gia));
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row col-10 mx-auto text-dark">
+            <div class="col-8 row">
+                <div class="sp-main pb-2 col-12 row">
+                    <div class="col">
+                        <img src="../../../image/main-cs/d&b-d80.png" class="img-main">
+                    </div>
+                    <div class="col p-0">
+                        <h3>Amplifier d&b Audiotechnik D80</h3>
+                        <table class="table border" style="font-size: 14px;">
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>D80</b></td>
+                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">d&b Audiotechnik</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                            </tr>
+                        </table>
+                        <div class="row m-0">
+                            <p style="width: 98px;">Số lượng:</p> 
+                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">0</b>đ</label>
+                            <button class="btn btn-success py-2">Liên Hệ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <h3>SỰ MIÊU TẢ</h3>
+                    <p>
+                        &b audiotechnik D80 là bộ khuếch đại công suất cao, 4 x 4.000W mỗi kênh với DSP toàn diện, điều khiển từ xa, bù trở kháng tự động và màn hình TFT.
+                        <br><br>
+                        Nếu thông số kỹ thuật thiết kế của bạn dành cho hệ thống lắp đặt cố định hoặc thiết bị lưu diễn di động yêu cầu mức áp suất âm thanh (SPL) cao, hãy chọn bộ khuếch đại công suất d&b audiotechnik D80 2U, bốn kênh. DSP của nó bao gồm hai bộ cân bằng đồ họa, khả năng trì hoãn và cấu hình cho tất cả các loa d&b cộng với chế độ tuyến tính. D80 có màn hình cảm ứng TFT màu, cho phép truy cập nhanh vào cấu trúc menu, trong khi bộ mã hóa quay có thể được sử dụng để tinh chỉnh. Bảng điều khiển phía trước và màn hình cảm ứng tích hợp của bộ khuếch đại D80 được nghiêng lên để dễ thao tác khi bộ khuếch đại ở dưới tầm mắt.
+                    </p>
+                    <h3>Điều khiển màn hình cảm ứng nghiêng</h3>
+                    <p>
+                        D80 tích hợp màn hình cảm ứng màu TFT, cung cấp khả năng truy cập nhanh vào cấu trúc menu, trong khi bộ mã hóa vòng quay có thể được sử dụng để tinh chỉnh. Bảng điều khiển phía trước và màn hình cảm ứng tích hợp của bộ khuếch đại D80 được nghiêng lên để dễ thao tác khi bộ khuếch đại ở dưới tầm mắt. Tỷ lệ đầu vào tín hiệu bằng nhau với các kênh đầu ra của bộ khuếch đại làm tăng tính linh hoạt của ứng dụng, đặc biệt đối với việc sử dụng kênh màn hình, điền trước hoặc kênh hiệu ứng.
+                    </p>
+                    <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                </div>
+                <div class="row" id="docThem">
+                    <h3>D&B AUDIOTECHNIK D80—SƠ LƯỢC:</h3>
+                    <p>
+                        Bộ khuếch đại bốn kênh dành riêng cho cài đặt
+                        <br>4 x 4.000W thành công suất tối đa 4 ohm
+                        <br>Tương thích với tất cả các thiết lập loa d&b hiện tại
+                        <br>Màn hình cảm ứng màu TFT, 3,5″/320 x 240 pixel
+                        <br>D&B AUDIOTECHNIK D80—PHÂN TÍCH CHI TIẾT
+                        <br>Được chế tạo cho các ứng dụng công suất cao, D80 có DSP toàn diện để điều khiển tín hiệu. Nó có khả năng trễ tín hiệu cho phép cài đặt do người dùng xác định tối đa 10 giây (= 3440 m/11286 ft.) được áp dụng độc lập cho từng kênh. Điều tương tự cũng áp dụng cho hai bộ cân bằng 16 băng tần của nó, cung cấp bộ lọc tham số, không đối xứng, giá đỡ hoặc notch tùy chọn.
+                    </p>    
+                        <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+                </div>
+            </div>
+            <div class="thongTinSP col ms-1">
+               <table class="table">
+                    <tr>
+                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
+                    </tr>
+                    <tr>
+                        <td class="col-6">Dải tần đáp ứng:</td>
+                        <td>Pink noise or Sine wave</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất:</td>
+                        <td>CF = 6 dB at 4 / 8 ohms : 4 x 2600/2000 W ; CF = 12 dB at 4 / 8 ohms : 4 x 4000/2000 W</td>
+                    </tr>
+                    <tr>
+                        <td>Công nghệ:</td>
+                        <td>Class D</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước:</td>
+                        <td>2U (10cm)</td>
+                    </tr>
+                    <tr>
+                        <td>Khối lượng:</td>
+                        <td>19 kg/42 lb</td>
+                    </tr>
+                    <tr>
+                        <td>Equalizer:</td>
+                        <td>2 x 16-band PEQ/notch/shelving/asymmetric</td>
+                    </tr>
+                    <tr>
+                        <td>Delay setting:</td>
+                        <td>0.3 - 10000 ms</td>
+                    </tr>
+                    <tr>
+                        <td>Configurations:</td>
+                        <td>current d&b loudspeakers and linear mode</td>
+                    </tr>
+                    <tr>
+                        <td>Sampling rate:</td>
+                        <td>96 kHz/27 Bit ADC/24 Bit DAC</td>
+                    </tr>
+                    <tr>
+                        <td>Sampling Digital AES/EBU:</p></td>
+                        <td>48 kHz/96 kHz</td>
+                    </tr>
+               </table>
+               <button data-bs-toggle="modal" data-bs-target="#thongTinSP" class="w-100">Xem chi tiết</button>
+            </div>
+        </div>
+        <footer class="row bg-black">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="thongTinSP">
+        <div class="modal-dialog">
+            <div class="modal-content mx-auto" style="width: 600px">
+                <div class="modal-header fw-bold">
+                    Thông số kỹ thuật chi tiết
+                    <button class="btn-close" data-bs-toggle="close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <td class="col-6">Dải tần đáp ứng:</td>
+                            <td>Pink noise or Sine wave</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất:</td>
+                            <td>CF = 6 dB at 4 / 8 ohms : 4 x 2600/2000 W ; CF = 12 dB at 4 / 8 ohms : 4 x 4000/2000 W</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ:</td>
+                            <td>Class D</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>2U (10cm)</td>
+                        </tr>
+                        <tr>
+                            <td>Khối lượng:</td>
+                            <td>19 kg/42 lb</td>
+                        </tr>
+                        <tr>
+                            <td>Equalizer:</td>
+                            <td> <p class="m-0">2 x 16-band</p> PEQ/notch/shelving/asymmetric</td>
+                        </tr>
+                        <tr>
+                            <td>Delay setting:</td>
+                            <td>0.3 - 10000 ms</td>
+                        </tr>
+                        <tr>
+                            <td>Configurations:</td>
+                            <td>current d&b loudspeakers and linear mode</td>
+                        </tr>
+                        <tr>
+                            <td>Sampling rate:</td>
+                            <td>96 kHz/27 Bit ADC/24 Bit DAC</td>
+                        </tr>
+                        <tr>
+                            <td>Sampling Digital AES/EBU:</td>
+                            <td>48 kHz/96 kHz</td>
+                        </tr>
+                        <tr>
+                            <td>Mains voltage:</td>
+                            <td>high range 208 - 240 V, 50 - 60 Hz / low range 100 - 127 V, 50 - 60 Hz</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước (h/w/d):</td>
+                            <td>2 RU x 19" x 530 mm/20.9"</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

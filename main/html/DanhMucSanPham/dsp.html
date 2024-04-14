@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSP - Vang số</title>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/danhMucSP.css">
+    <link rel="stylesheet" href="../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav style="background-color: rgb(253, 250, 246);" class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class=" row gap-2 col-10 mx-auto item-list">
+            <h3>Tất cả vang số</h3>
+            <div class="row gap-2 mx-auto">
+                <a href="../ChiTietSanPham/dsp/lbe1000.html" class="item rounded-3" style="width: 20%;">
+                    <img src="../../image/dsp/lbe1000.png" class="row mx-auto">
+                    <div class="item-title">
+                        <p class="item-name">Vang số LB Audio - LB E1000</p>
+                        <p class="item-price">9.500.000₫</p>
+                    </div>
+                </a>
+                <a href="../ChiTietSanPham/dsp/vinal-x3.html" class="item rounded-3" style="width: 20%;">
+                    <img src="../../image/dsp/vinal-x3.png" class="row mx-auto">
+                    <div class="item-title">
+                        <div class="item-title">
+                            <p class="item-name">Vang số Vinal X3</p>
+                            <p class="item-price">6.500.000₫</p>
+                        </div>
+                    </div>
+                </a>
+            </div> 
+        </div>
+        <div class="row col-10 mx-auto mt-4">
+            <p>Vang số là công nghệ được sử dụng để cải thiện chất lượng âm thanh. Khi âm thanh được khuếch đại và phát ra, các sóng âm sẽ gặp phải các tác động như nhiễu điện từ hoặc nhiễu từ môi trường. Thiết bị sử dụng một bộ lọc để loại bỏ nhiễu và cải thiện tín hiệu âm thanh. Vang số giúp mang lại trải nghiệm âm thanh sống động, trung thực và tốt hơn cho người dùng.</p>
+            <p>
+                Vang số (hay còn gọi là xử lý tín hiệu âm thanh số) là một công nghệ được sử dụng để cải thiện chất lượng âm thanh bằng cách loại bỏ nhiễu và tăng cường tín hiệu âm thanh. Vang số có thể được áp dụng trong nhiều lĩnh vực khác nhau nhưng chủ yếu là sử dụng trong hệ thống âm thanh chuyên nghiệp. Showroom của chúng tôi phân phối cho khách hàng những sản phẩm vang số đạt chuẩn nhất về chất lượng, mang đến âm thanh trong trẻo, thanh thoát nhất.
+            </p>
+            <button id="btnDocThem" class="row btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+        </div>
+        <div class="row col-10 mx-auto mt-4" id="docThem">
+            <h3>Vang số xử lý âm thanh thông minh </h3>
+            <p><br>
+                Vang số được trang bị các tính năng và công nghệ mới nhất để cải thiện chất lượng âm thanh và tối ưu hóa hiệu suất hệ thống âm thanh. Với khả năng xử lý âm thanh thông minh, vang số có thể tự động điều chỉnh các tham số âm thanh để đảm bảo rằng âm thanh được tái sản xuất chính xác và trung thực.
+                <br><br>
+                Các tính năng thông minh của vang số bao gồm việc tự động điều chỉnh cường độ âm thanh, phân tích tần số và định vị âm thanh. Với khả năng phân tích tần số, vang số có thể tự động phát hiện các tần số không mong muốn và loại bỏ chúng. Điều này giúp cải thiện chất lượng âm thanh và giảm thiểu nhiễu âm thanh.
+                <br><br>
+                Với tính năng định vị âm thanh, vang số có thể xác định vị trí của nguồn âm thanh và tập trung âm thanh đến điểm tập trung. Điều này giúp cải thiện trải nghiệm âm thanh và tạo ra một không gian âm thanh rộng và sống động.
+                <br><br>      
+                Một số vang số xử lý âm thanh thông minh còn được trang bị các tính năng tiên tiến khác như tính năng tự động cân bằng âm thanh, tính năng tái tạo âm thanh cao cấp và tính năng tăng cường âm thanh siêu trầm. Tất cả các tính năng này đều giúp cải thiện chất lượng âm thanh và tăng cường trải nghiệm âm thanh cho người dùng.
+                <br><br>      
+                Với sự tiên tiến của công nghệ, vang số xử lý âm thanh thông minh đang trở thành xu hướng mới trong thị trường âm thanh. Các sản phẩm vang số này không chỉ mang lại chất lượng âm thanh tốt hơn mà còn mang lại một trải nghiệm âm thanh đầy thú vị và sống động.
+                <br><br>
+                <img src="../../image/danhMucInfor/dsp.png" style="width: 80%;"class="row mx-auto">
+            </p>
+            <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+        </div>
+    </div>
+        <footer class="row bg-black mt-3">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>  

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loa d&b Audiotechnik</title>
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../css/danhMucSP.css">
+    <link rel="stylesheet" href="../../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../../trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav style="background-color: rgb(253, 250, 246);" class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="trademark-list" class="row col-10 mx-auto gap-1 mt-3 mb-3">
+            <h4 class="mx-auto text-center my-2">Các Thương Hiệu Loa Chính Hãng</h4>
+            <div class="row gap-1 mx-auto p-0-">
+                <a href="../loa/loa.html" class="col btn rounded-3 border border-2"><button class="btn">Tất cả</button></a>
+                <a href="../loa/nexo.html" class="col btn rounded-3 border border-2"><button class="btn">Nexo</button></a>
+                <a href="../loa/4acoustic.html" class="col btn rounded-3 border border-2"><button class="btn">4 Acoustic</button></a>
+                <a href="../loa/adamson.html" class="col btn rounded-3 border border-2"><button class="btn">Adamson</button></a>
+                <a href="../loa/d&b.html" class="col btn rounded-3 border border-2"><button class="btn">d&b</button></a>
+            </div>
+        </div>
+        <div class=" row gap-2 col-10 mx-auto item-list">
+            <h3>Tất cả loa</h3>
+            <div class="row gap-2 mx-auto">
+                <a href="../../ChiTietSanPham/loa/d&b-e6.html" class="item rounded-3" style="width: 20%;">
+                    <img src="../../../image/speaker/d&b-e6.png" class="row mx-auto">
+                    <div class="item-title">
+                        <p class="item-name">Loa d&b Audiotechnik E6</p>
+                        <p class="item-price">101.054.140đ</p>
+                    </div>
+                </a>
+                <a href="../../ChiTietSanPham/loa/d&b-e4.html" class="item rounded-3" style="width: 20%;">
+                    <img src="../../../image/speaker/d&b-e4.png" class="row mx-auto">
+                    <div class="item-title">
+                        <p class="item-name">Loa d&b Audiotechnik E4</p>
+                        <p class="item-price">44.117.800đ</p>
+                    </div>
+                </a>
+            </div> 
+        </div>
+        <div class="row col-10 mx-auto mt-4">
+            <h3>Giới thiệu d&b Audiotechnik</h3>
+            <p>Loa d&b Audiotechnik là một trong những thương hiệu loa chuyên nghiệp hàng đầu trên thế giới, được rất nhiều chuyên gia âm thanh và những người đam mê âm nhạc đánh giá cao. Với hơn 40 năm kinh nghiệm trong lĩnh vực âm thanh, d&b Audiotechnik đã tạo ra những sản phẩm loa chất lượng cao, mang lại trải nghiệm âm thanh tuyệt vời cho người dùng.
+                <br><br>
+                Với tiêu chí "Bền vững, tối ưu hóa và hiệu quả", loa d&b không chỉ có thiết kế đẹp mắt và tiên tiến, mà còn sở hữu âm thanh sống động, tự nhiên, cân bằng và mạnh mẽ. Khả năng tùy chỉnh và kết hợp với các thiết bị khác, loa Audiotechnik đảm bảo mang đến âm thanh đầy đủ và chân thật nhất cho người dùng.
+                <br><br>
+                Dù bạn là một chuyên gia âm thanh chuyên nghiệp hay đơn giản chỉ là một người đam mê âm nhạc, loa Audiotechnik sẽ là sự lựa chọn hoàn hảo để nâng cao trải nghiệm âm thanh của bạn. Vậy bên cạnh những đặc điểm ấn tượng này, loa còn có những tính năng và đặc điểm gì khác? Hãy cùng tìm hiểu.
+                <br><br>
+                <img src="../../../image/danhMucInfor/d&b-dm1.png" style="width: 50%;"class="row mx-auto">
+            </p>
+            <button id="btnDocThem" class="row btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+        </div>
+        <div class="row col-10 mx-auto mt-4" id="docThem">
+            <h3>Loa d&b Audiotechnik hoạt động bền bỉ</h3>
+            <p> <br>Loa d&b Audiotechnik là một trong những sản phẩm loa chất lượng cao được ưa chuộng nhất trên thị trường hiện nay. Với thiết kế và cấu tạo đặc biệt, loa đảm bảo hoạt động bền bỉ, ổn định và đáp ứng tốt nhất nhu cầu sử dụng của người dùng.
+                <br><br>
+                Sản phẩm loa Audiotechnik được thiết kế với công nghệ tiên tiến, sử dụng các linh kiện và vật liệu chất lượng cao, giúp sản phẩm đạt được hiệu suất hoạt động ổn định trong thời gian dài. Đồng thời, loa d&b còn được trang bị hệ thống bảo vệ chống quá tải, chống nhiễu và chống rung động, giúp sản phẩm đảm bảo sự ổn định trong suốt quá trình sử dụng.
+                <br><br>
+                Với những ưu điểm vượt trội về chất lượng và độ bền, loa đã được ứng dụng rộng rãi trong các hệ thống âm thanh chuyên nghiệp, như các sân khấu, phòng hội nghị, phòng trưng bày, nhà thờ và các khu vực công cộng khác.
+                <br><br>
+                Với chất lượng hoàn hảo và độ bền cao, loa d&b là lựa chọn tuyệt vời cho những người đam mê âm thanh chuyên nghiệp và mong muốn sở hữu một sản phẩm loa hoạt động bền bỉ, ổn định và đáp ứng tốt nhất nhu cầu của mình.
+            </p>
+            <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+        </div>
+    </div>
+        <footer class="row bg-black mt-3">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" href="../../trangchu.html" class="d-flex">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>  

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <link rel="stylesheet" href="../../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <title>Cục Đẩy 1U Nexo DTD AMP 4X1.3</title>
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+            $("#slsp").change(function(){
+                let sl = $("#slsp").val();
+                let gia = 65151900;
+                if(!(sl == "")){
+                    $("#tongTien").html(formatCurrency(gia*sl));
+                }
+                else{
+                    $("#tongTien").html(formatCurrency(gia));
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row col-10 mx-auto text-dark">
+            <div class="col-8 row">
+                <div class="sp-main pb-2 col-12 row">
+                    <div class="col">
+                        <img src="../../../image/main-cs/nexo-dtd-4x1_3.png" class="img-main">
+                    </div>
+                    <div class="col p-0">
+                        <h3>Cục Đẩy 1U Nexo DTD AMP 4X1.3</h3>
+                        <table class="table border" style="font-size: 14px;">
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>DTDAMP4X1.3</b></td>
+                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">Nexo</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                            </tr>
+                        </table>
+                        <div class="row m-0">
+                            <p style="width: 98px;">Số lượng:</p> 
+                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">65.151.900</b>đ</label>
+                            <button class="btn btn-primary py-2 mb-2">Đặt hàng ngay</button>
+                            <button class="btn btn-success py-2">Mua trả góp</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <h3>NEXO DTDAMP 4x1.3</h3>
+                    <p>
+                        Nexo DTD AMP 4x1.3 là dòng cục đẩy 4 kênh sở hữu bộ điều khiển TD Digital, là sự kết hoàn hảo cho hệ thống loa Nexo được hỗ trợ bởi Bộ điều khiển DTD, mang đến hiệu quả vượt trội cả về hiệu suất lẫn chất lượng âm thanh.
+                        <br><br>
+                        Cục đẩy công suất 1U Nexo DTD AMP 4x1.3 được hỗ trợ bộ điểu khiển DTD, là sự kết hợp hoàn hảo cho hầu hết các loa Nexo, từ dòng ID đến PS15 nổi tiếng thế giới
+                        <img src="../../../image/information/dtd-4x1-3-infor1.png" style="width: 100%; display: block;" class="mx-auto">
+                    </p>
+                    <button id="btnDocThem" class="btn border border-primary mx-auto mb-2" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                </div>
+                <div class="row" id="docThem">
+                    <h3>Thiết kế của Amplifier DTDAMP 4x1.3</h3>
+                    <p>
+                        Amplifier 1U Nexo DTD AMP 4x1.3 có tông màu đen - trắng sang trọng. Nexo DTD AMP 4x1.3 mang thiết kế dạng hình hộp chữ nhật với kích thước rộng 480mm, cao 44 mm, sâu 370 mm. Nexo DTD AMP 4x1.3 có vỏ hộp khỏe khoắn, cứng cáp giúp bảo vệ tốt các linh kiện bên trong, tránh được sự va đập và các tác động xấu từ bên ngoài.
+                        <br><br>
+                        NEXO DTDAMP 4x1.3 có kích thước khá nhỏ gọn và trọng lượng khá nhẹ chỉ 7,5kg, giúp dễ dàng vận chuyển cũng như lắp đặt, phù hợp cho nhiều vị trí không gian khác nhau.
+                        <br><br>
+                        Mặt trước của Amplifier NEXO DTDAMP 4x1.3 có các nút điều khiển, lưới tản nhiệt, đèn LED thông báo và nút công tắc nguồn. Logo của hãng NEXO được bố trí ở góc bên phải làm tăng tính nhận diện của thương hiệu.
+                    </p>    
+                        <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+                </div>
+            </div>
+            <div class="thongTinSP col ms-1">
+               <table class="table">
+                    <tr>
+                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
+                    </tr>
+                    <tr>
+                        <td class="col-6">Công suất / 8 Ω:</td>
+                        <td>4 kênh 1300W</td>
+                    </tr>
+                    <tr>
+                        <td>Dải tần đáp ứng:</td>
+                        <td>+/- 0.5 dB from 20 Hz to 20 kHz</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất:</td>
+                        <td>4 x 135V / (4 x 8 Ohms) 4 x 750 Watts / (4 x 4 Ohms) 4 x 1300 Watts / (2 brigde x 8 Ohms) 2 x 2600 Watts</td>
+                    </tr>
+                    <tr>
+                        <td>Trở kháng đầu vào:</td>
+                        <td>10 kOhms</td>
+                    </tr>
+                    <tr>
+                        <td>Độ nhạy đầu vào:</td>
+                        <td>+8 dBU</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước (h/w/d):</td>
+                        <td>480 (W) x 44 (H) x 370 (D) mm, 19 inches / 1U</td>
+                    </tr>
+                    <tr>
+                        <td>Khối lượng:</td>
+                        <td>7.5 kg</td>
+                    </tr>
+               </table>
+               <button data-bs-toggle="modal" data-bs-target="#thongTinSP" class="w-100">Xem chi tiết</button>
+            </div>
+        </div>
+        <footer class="row bg-black">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="thongTinSP">
+        <div class="modal-dialog">
+            <div class="modal-content mx-auto" style="width: 600px">
+                <div class="modal-header fw-bold">
+                    Thông số kỹ thuật chi tiết
+                    <button class="btn-close" data-bs-toggle="close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <td class="col-6">Công suất / 8 Ω:</td>
+                            <td>4 kênh 1300W</td>
+                        </tr>
+                        <tr>
+                            <td>Dải tần đáp ứng:</td>
+                            <td>+/- 0.5 dB from 20 Hz to 20 kHz</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất:</td>
+                            <td>4 x 135V / (4 x 8 Ohms) 4 x 750 Watts / (4 x 4 Ohms) 4 x 1300 Watts / (2 brigde x 8 Ohms) 2 x 2600 Watts</td>
+                        </tr>
+                        <tr>
+                            <td>Trở kháng đầu vào:</td>
+                            <td>10 kOhms</td>
+                        </tr>
+                        <tr>
+                            <td>Độ nhạy đầu vào:</td>
+                            <td>+8 dBU</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước (h/w/d):</td>
+                            <td>480 (W) x 44 (H) x 370 (D) mm, 19 inches / 1U</td>
+                        </tr>
+                        <tr>
+                            <td>Khối lượng:</td>
+                            <td>7.5 kg</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

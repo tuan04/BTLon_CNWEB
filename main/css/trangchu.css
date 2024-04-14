@@ -1,5 +1,11 @@
-#trademark-list button{
+#trademark-list a{
     height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#trademark-list img{
+    width: 180px;
 }
 .item-list .item{
     border:1px solid black;

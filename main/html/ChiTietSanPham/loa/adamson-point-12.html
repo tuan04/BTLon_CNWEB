@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <link rel="stylesheet" href="../../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <title>Adamson Point 12</title>
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+            $("#slsp").change(function(){
+                let sl = $("#slsp").val();
+                let gia = 0;
+                if(!(sl == "")){
+                    $("#tongTien").html(formatCurrency(gia*sl));
+                }
+                else{
+                    $("#tongTien").html(formatCurrency(gia));
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row col-10 mx-auto text-dark">
+            <div class="col-8 row">
+                <div class="sp-main pb-2 col-12 row">
+                    <div class="col">
+                        <img src="../../../image/speaker/adamson-point-12.png" class="img-main">
+                    </div>
+                    <div class="col p-0">
+                        <h3>Loa Adamson Point 12</h3>
+                        <table class="table border" style="font-size: 14px;">
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>POINT12</b></td>
+                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">Adamson</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                            </tr>
+                        </table>
+                        <div class="row m-0">
+                            <p style="width: 98px;">Số lượng:</p> 
+                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">0</b>đ</label>
+                            <button class="btn btn-success py-2">Liên hệ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <p>Trong một thị trường loa đa dạng với nhiều sự lựa chọn, loa Adamson Point 12 tỏa sáng với sức mạnh âm thanh hiện hữu. Với thiết kế kỹ thuật đầy tỉ mỉ, nó chứa đựng những công nghệ tiên tiến nhất để đảm bảo rằng mọi nốt nhạc, mọi tiết tấu đều được tái hiện một cách chân thực và sống động.</p>
+                    <h3>Loa Adamson Point 12 có cấu tạo như thế nào </h3>
+                    <p><br>Cấu tạo của loa karaoke cao cấp Adamson Point 12 xuất phát từ việc kết hợp các thành phần quan trọng như loa trầm, loa trung và loa treble. Các loa này được sắp xếp một cách chính xác bên trong vỏ loa để tạo ra một dải âm thanh đa dạng và cân đối. Loa trầm đảm nhiệm phần dưới của dải tần số, tạo ra những âm trầm mạnh mẽ mà không bị méo mó hay rè.
+                        <br><br>
+                        Khả năng tái hiện âm thanh một cách sắc nét và chi tiết của loa Point 12 đến từ công nghệ xử lý âm thanh tiên tiến. Các bộ xử lý tín hiệu số giúp tối ưu hóa chất lượng âm thanh và đảm bảo rằng mọi nốt nhạc và tiết tấu đều được tái hiện một cách tinh tế. Điều này giúp người nghe có cảm giác như đang tham gia vào một buổi trình diễn âm nhạc trực tiếp.
+                        <br><br>
+                        Một yếu tố quan trọng khác trong cấu tạo của loa hát karaoke chuyên nghiệp Adamson Point 12 là vỏ loa. Vỏ loa được thiết kế để giảm thiểu nhiễu từ và tái phản xạ âm thanh, tạo ra môi trường âm thanh thuần túy nhất. Vật liệu và cấu trúc vỏ loa được tối ưu hóa để đảm bảo sự cân đối giữa độ cứng và độ nhẹ, từ đó tạo ra âm thanh không bị méo mó và biến dạng.
+                        <br><br>
+                        Thiết kế của loa Point 12 cũng đã được tập trung vào tính thẩm mỹ. Với vẻ ngoại hình tinh tế và hiện đại, loa này không chỉ là một thiết bị âm thanh mà còn là một tác phẩm nghệ thuật. Thiết kế đơn giản nhưng không kém phần tinh tế giúp loa Point 12 dễ dàng hòa mình vào mọi không gian.
+                        <br><br>
+                        Cấu tạo của loa cao cấp Adamson Point 12 thể hiện sự kết hợp hoàn hảo giữa công nghệ tiên tiến và thiết kế tinh tế. Từ việc sắp xếp các loa bên trong, công nghệ xử lý âm thanh đến thiết kế vỏ loa và thẩm mỹ tổng thể, mọi yếu tố đều hội tụ để tạo nên một sản phẩm âm thanh đẳng cấp, mang đến trải nghiệm nghe nhạc không thể nào quên.
+                    </p>
+                    <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                </div>
+                <div class="row" id="docThem">
+                    <img src="../../../image/speaker/adamson-point-12.png" style="width: 50%; display: block;" class="mx-auto">  
+                    <h3>Loa Adamson Point 12 - Hát karaoke với tiếng hát trong trẻo, cảm xúc </h3>
+                    <p><br>Với sức mạnh của loa Adamson Point 12, việc hát karaoke trở nên sống động hơn bao giờ hết. Khả năng tái hiện âm thanh chân thực và sắc nét của loa mang đến một trải nghiệm như thể bạn đang biểu diễn trên sân khấu. Tiếng hát của bạn sẽ được truyền tải một cách sống động và tự nhiên, tạo nên một bữa tiệc âm nhạc thú vị.
+                        <br><br>
+                        Công nghệ xử lý âm thanh tiên tiến của loa hát karaoke hay nhất Point 12 cũng đóng một vai trò quan trọng trong việc tạo ra trải nghiệm karaoke tuyệt vời. Các bộ xử lý tín hiệu số giúp tối ưu hóa âm thanh từng nốt nhạc, từng giai điệu. Điều này đồng nghĩa với việc tiếng hát của bạn sẽ được phát ra một cách sắc nét, không bị méo mó hay nhiễu từ, giúp bạn thể hiện tốt nhất khả năng ca hát.
+                        <br><br>
+                        Một điểm đáng chú ý khác của loa Adamson Point 12 là khả năng tạo ra không gian âm thanh mở rộ. Khi bạn hát karaoke qua loa này, tiếng hát của bạn sẽ lan tỏa đều trong không gian, tạo ra cảm giác như bạn đang biểu diễn trên sân khấu lớn. Điều này không chỉ tạo nên trải nghiệm âm nhạc tuyệt vời mà còn tăng thêm sự tự tin và phấn khích khi hát karaoke.
+                        <img src="../../../image/information/point12-infor.png"style="width: 50%; display: block;" class="mx-auto">
+                    </p>    
+                        <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+                </div>
+            </div>
+            <div class="thongTinSP col ms-1">
+               <table class="table">
+                    <tr>
+                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
+                    </tr>
+                    <tr>
+                        <td class="col-6">Mã sản phẩm:</td>
+                        <td>Point 12</td>
+                    </tr>
+                    <tr>
+                        <td>Chất liêu:</td>
+                        <td>gỗ Bạch Dương</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất:</td>
+                        <td>61/2440 Watts</td>
+                    </tr>
+                    <tr>
+                        <td>Trở kháng:</td>
+                        <td>16ohm</td>
+                    </tr>
+                    <tr>
+                        <td>Độ nhạy(1w @1m):</td>
+                        <td>132,5 dB</td>
+                    </tr>
+                    <tr>
+                        <td>Tần số đáp tuyến:</td>
+                        <td>60 Hz đến 18 kHz</td>
+                    </tr>
+                    <tr>
+                        <td>Góc phủ âm (Ngang x Dọc):</td>
+                        <td>60° x 40°, 90° x 60°, 40° x 20° (có thể xoay)</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước:</td>
+                        <td>Rộng 353mm x Cao 642mm x Sâu 310mm</td>
+                    </tr>
+                    <tr>
+                        <td>Trọng lượng:</td>
+                        <td>22,5 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Đổi trả:</td>
+                        <td>MIỄN PHÍ trong 15 ngày lỗi SX</td>
+                    </tr>
+               </table>
+               <button data-bs-toggle="modal" data-bs-target="#thongTinSP" class="w-100">Xem chi tiết</button>
+            </div>
+        </div>
+        <footer class="row bg-black">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="thongTinSP">
+        <div class="modal-dialog">
+            <div class="modal-content mx-auto" style="width: 600px">
+                <div class="modal-header fw-bold">
+                    Thông số kỹ thuật chi tiết
+                    <button class="btn-close" data-bs-toggle="close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <td class="col-6">Mã sản phẩm:</td>
+                            <td>Point 12</td>
+                        </tr>
+                        <tr>
+                            <td>Chất liêu:</td>
+                            <td>gỗ Bạch Dương</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất:</td>
+                            <td>61/2440 Watts</td>
+                        </tr>
+                        <tr>
+                            <td>Trở kháng:</td>
+                            <td>16ohm</td>
+                        </tr>
+                        <tr>
+                            <td>Độ nhạy(1w @1m):</td>
+                            <td>132,5 dB</td>
+                        </tr>
+                        <tr>
+                            <td>Tần số đáp tuyến:</td>
+                            <td>60 Hz đến 18 kHz</td>
+                        </tr>
+                        <tr>
+                            <td>Góc phủ âm (Ngang x Dọc):</td>
+                            <td>60° x 40°, 90° x 60°, 40° x 20° (có thể xoay)</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>Rộng 353mm x Cao 642mm x Sâu 310mm</td>
+                        </tr>
+                        <tr>
+                            <td>Trọng lượng:</td>
+                            <td>22,5 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Đổi trả:</td>
+                            <td>MIỄN PHÍ trong 15 ngày lỗi SX</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất sứ:</td>
+                            <td>Canada</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

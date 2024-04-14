@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <link rel="stylesheet" href="../../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <title>4Acoustic SQ1200</title>
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            function formatCurrency(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+            $("#slsp").change(function(){
+                let sl = $("#slsp").val();
+                let gia = 12500000;
+                if(!(sl == "")){
+                    $("#tongTien").html(formatCurrency(gia*sl));
+                }
+                else{
+                    $("#tongTien").html(formatCurrency(gia));
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="#" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="#" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row col-10 mx-auto text-dark">
+            <div class="col-8 row">
+                <div class="sp-main pb-2 col-12 row">
+                    <div class="col">
+                        <img src="../../../image/main-cs/4acoustic_sq1200.png" class="img-main">
+                    </div>
+                    <div class="col p-0">
+                        <h3>Công Suất 2 Kênh 4Acoustic SQ1200</h3>
+                        <table class="table border" style="font-size: 14px;">
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>SQ1200</b></td>
+                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);">4Acoustic</b></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
+                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
+                            </tr>
+                        </table>
+                        <div class="row m-0">
+                            <p style="width: 98px;">Số lượng:</p> 
+                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
+                            <label style="color: red; width:auto;">Giá: <b id="tongTien">12.500.000</b>đ</label>
+                            <button class="btn btn-primary py-2 mb-2">Đặt hàng ngay</button>
+                            <button class="btn btn-success py-2">Mua trả góp</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <h3>Amplifier 4Acoustic SQ1200</h3>
+                    <p>
+                        Amplifier 4Acoustic SQ1200 2 kênh mỗi kênh 600w phù hợp cho những dòng loa karaoke gia đình và phòng hát chuyên nghiệp.
+                        <br><br>
+                        Amplifier 4Acoustic SQ1200 có kích thước nhỏ gọn 483mm × 486mm × 90mm. Bộ khuếch đại công suất Class H 2 kênh 2x1200W @ 2Ohm: 2x9000W @ 4Ohm: 2x600W@8Ohm: mang lại độ ổn định và tính âm vực cao nhất cho dàn âm thanh.
+                        <br><br>
+                        - Phía trước 2 bên là lỗ thông hơi dập CNC, có quạt thông gió hút gió từ đằng trước và đẩy gió ra đằng sau làm mát tản nhiệt công suất và các đèn led báo tín hiệu và báo báo chập cháy hoặc Amplifier đang có vấn đề cần phải bảo trì. Bên phải có công tắc nguồn của amplifier.
+                        <br><br>
+                        - Đằng sau của chiếc amplifier cũng có 2 quạt thông gió để hút ra ngoài và có mặt lưới để đảm bảo an toàn và bảo vệ cánh quạt tránh bị gãy
+                    </p>
+                    <button id="btnDocThem" class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+                </div>
+                <div class="row" id="docThem">
+                    <h3>Các chế độ:</h3>
+                    <p><img src="../../../image/danhMucInfor/sq1200-infor.png" style="width: 50%; display: block;" class="mx-auto">
+                        Stereo tín hiệu ra 2 kênh riêng biệt.
+                        <br><br>
+                        Bridge nhân đôi công suất 2 kênh lại làm 1.
+                        <br><br>
+                        Prallel link tín hiệu từ kênh a sang kênh b
+                        <br><br>
+                        Gain tín hiệu đầu vào: 0,75v/1v/1,44v
+                        <br><br>
+                        LPF cắt tần số cao và chỉ cho công suất ra ở dải tần số thấp. PASS amply về chế độ mặc định của tần số ra loa.
+                        <br><br>
+                        Tín hiệu đầu ra có 2 chuẩn jack: jack speakon, jack cắm dây loa rất tiện lợi cho người sử dụng
+                        <br><br>
+                        Clip mode: giúp kiểm soát loa tốt hơn khi đánh loa ở chế độ 4ohm hoặc 8ohm đây là điều đặc biệt ở chiếc ampli SQ1200
+                        <br><br>
+                        Với các thông số kỹ thuật như: Tần số đáp ứng: 10Hz-20kHz/ ~0.3dB @ 1 Watt, 8 Ohm mang đến cho người nghe âm thanh chân thực nhất
+                    </p>    
+                        <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
+                </div>
+            </div>
+            <div class="thongTinSP col ms-1">
+               <table class="table">
+                    <tr>
+                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
+                    </tr>
+                    <tr>
+                        <td class="col-6">Công suất / 8 Ω:</td>
+                        <td>2 x 600W @ 8Ohm</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất / 4 Ω:</td>
+                        <td>2 x 900W @ 4Ohm</td>
+                    </tr>
+                    <tr>
+                        <td>Dải tần đáp ứng:</td>
+                        <td>10Hz - 20KHz / ±0.3dB</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất:</td>
+                        <td>1 x 2400W @ 4Ohm; 1 x 1800W @ 8Ohm; 1 x 1200W @16Ohm</td>
+                    </tr>
+                    <tr>
+                        <td>Công nghệ:</td>
+                        <td>Class H</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước:</td>
+                        <td>2U (10cm)</td>
+                    </tr>
+                    <tr>
+                        <td>Voltage Gain:</td>
+                        <td>39dB (0,775V:69.5V)</td>
+                    </tr>
+                    <tr>
+                        <td>Trở kháng đầu vào:</td>
+                        <td>20k Ohm Balanced, 10k Ohm Unbalanced</td>
+                    </tr>
+                    <tr>
+                        <td>Độ nhạy đầu vào:</td>
+                        <td>0.775V/1V/1.4V</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước (h/w/d):</td>
+                        <td>19“/2U 483mm×486mm×90mm</td>
+                    </tr>
+               </table>
+               <button data-bs-toggle="modal" data-bs-target="#thongTinSP" class="w-100">Xem chi tiết</button>
+            </div>
+        </div>
+        <footer class="row bg-black">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="thongTinSP">
+        <div class="modal-dialog">
+            <div class="modal-content mx-auto" style="width: 600px">
+                <div class="modal-header fw-bold">
+                    Thông số kỹ thuật chi tiết
+                    <button class="btn-close" data-bs-toggle="close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <th colspan="2">THÔNG TIN SẢN PHẨM</th>
+                        </tr>
+                        <tr>
+                            <td>Cấu tạo:</td>
+                            <td>loa 2 đường tiếng</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Mã sản phẩm:</td>
+                            <td>SI10</td>
+                        </tr>
+                        <tr>
+                            <td>Chất liệu vỏ:</td>
+                            <td>gỗ Bạch Dương</td>
+                        </tr>
+                        <tr>
+                            <td>Loa Bass:</td>
+                            <td>25cm</td>
+                        </tr>
+                        <tr>
+                            <td>Công suất:</td>
+                            <td>rms 300W, program 600W, peak 1200W</td>
+                        </tr>
+                        <tr>
+                            <td>Trở kháng:</td>
+                            <td>8ohm</td>
+                        </tr>
+                        <tr>
+                            <td>Cường độ phát âm cực đại:</td>
+                            <td>128dB</td>
+                        </tr>
+                        <tr>
+                            <td>Độ nhạy (1w @ 1m):</td>
+                            <td>98dB</td>
+                        </tr>
+                        <tr>
+                            <td>Tần số đáp tuyến:</td>
+                            <td>50 Hz - 20 kHz</td>
+                        </tr>
+                        <tr>
+                            <td>Góc phủ âm (Ngang x Dọc):</td>
+                            <td>90°x40°</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>525x312x295 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Trọng lượng:</td>
+                            <td>16,5 Kg</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất xứ:</td>
+                            <td>4Acoustic/Germany</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
