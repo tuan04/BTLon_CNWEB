@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tổng hợp loa</title>
+    <title>Thương hiệu 4Acoustic</title>
     <link rel="icon" type="image/x-icon" href="../../../image/icon/speaker.png">
     <script src="../../../js/jquery-3.7.1.min.js"></script>
     <script src="../../../js/bootstrap.bundle.min.js"></script>
@@ -16,6 +16,19 @@
             margin: 0;
         }
     </style>
+    <script>
+        $(document).ready(function(){
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="container-fluid" style="position: relative;">
@@ -48,7 +61,7 @@
             <div class="col-10 mx-auto navbar navbar-expand">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item">
-                        <a href="loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <a href="../loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
                         <ul class="menu-lv-1">
                             <li class="nav-item"><a href="../loa/nexo.html" class="nav-link">Nexo</a></li>
                             <li class="nav-item"><a href="../loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
@@ -78,113 +91,66 @@
             </div>
         </nav>
         <div id="link-path" class="row col-10 mx-auto border-bottom border-2">
-            <p class="m-0 p-0"><a href="../../trangchu.html">Trang chủ</a> > <a href="../../DanhMucSanPham/loa/loa.html">Tất cả loa</a></p>
-        </div>
-        <div id="trademark-list" class="row col-10 mx-auto gap-1 mt-3 mb-3">
-            <h4 class="mx-auto text-center my-2">Các Thương Hiệu Loa Chính Hãng</h4>
-            <div class="row gap-1 mx-auto p-0">
-                <div class="row gap-1 mx-auto">
-                    <a href="../loa/loa.html" class="col btn rounded-3 border border-2 bg-success"><button class="btn text-white">Tất cả</button></a>
-                    <a href="../loa/nexo.html" class="col btn rounded-3 border border-2"><button class="btn">Nexo</button></a>
-                    <a href="../loa/4acoustic.html" class="col btn rounded-3 border border-2"><button class="btn">4 Acoustic</button></a>
-                    <a href="../loa/adamson.html" class="col btn rounded-3 border border-2"><button class="btn">Adamson</button></a>
-                    <a href="../loa/d&b.html" class="col btn rounded-3 border border-2"><button class="btn">d&b</button></a>
-                </div>
-            </div>
+            <p class="m-0 p-0"><a href="../../trangchu.html">Trang chủ</a> > <a href="../../../html/DanhMucSanPham/theoHang/4acoustic-hang.html">Thương hiệu 4Acoustic</a></p>
         </div>
         <div class=" row gap-2 col-10 mx-auto item-list">
-            <h3>Tất cả loa</h3>
-            <div class="row gap-2 mx-auto">
-                <a href="../../ChiTietSanPham/loa/nexo-id24t.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-id24t.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa Nexo ID24T</p>
-                        <p class="item-price">36.990.000&#8363;</p>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/nexo-id84.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-id84.png" class="row mx-auto">
-                    <div class="item-title">
-                        <div class="item-title">
-                            <p class="item-name">Loa Nexo ID84</p>
-                            <p class="item-price">96.767.000&#8363;</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/4coustic-si12.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/4acoustic-si12.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa 4Coustic Si12</p>
-                        <p class="item-price">36.990.000&#8363;</p>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/d&b-e4.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/d&b-e4.png" class="row mx-auto">
-                    <div class="item-title">
-                        <div class="item-title">
-                            <p class="item-name">Loa d&b Audiotechnik E4</p>
-                            <p class="item-price">44.117.880&#8363;</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/nexo-eps8.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-eps8.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa Nexo EPS8 France</p>
-                        <p class="item-price">73.097.000₫</p>
-                    </div>
-                </a>
-            </div> 
-            <div class="row gap-2 mx-auto">
-                <a href="../../ChiTietSanPham/loa/nexo-ps10-r2.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-ps10.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa Nexo PS10 R2 France</p>
-                        <p class="item-price">115.296.000&#8363;</p>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/nexo-ps15.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-ps15.png" class="row mx-auto">
-                    <div class="item-title">
-                        <div class="item-title">
-                            <p class="item-name">Loa Nexo PS15 France</p>
-                            <p class="item-price">188.926.000&#8363;</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/d&b-e6.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/d&b-e6.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa d&b Audiotechnik E6</p>
-                        <p class="item-price">101.054.140&#8363;</p>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/adamson-point-12.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/adamson-point-12.png" class="row mx-auto">
-                    <div class="item-title">
-                        <div class="item-title">
-                            <p class="item-name">Loa Adamson Point 12</p>
-                            <p class="item-price">Giá liên hệ</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/nexo-p12.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/moniter-nexo-p12.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa Kiểm Âm Nexo P12 (Monitor)</p>
-                        <p class="item-price">Giá liên hệ</p>
-                    </div>
-                </a>
+            <div class="col-2 m-0">
+                <h4 class="m-0" style="height: 30px;">4Acoustic</h4>
+                <img src="../../../image/trademark/4-acoustic-logo.png" height="12%" class="p-0">
             </div>
-            <div class="row gap-2 mx-auto">
-                <a href="../../ChiTietSanPham/loa/4coustic-si10.html" class="item rounded-3" style="width: 19.45%;">
-                    <img src="../../../image/speaker/4acoustic-si10.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa 4Acoustic Si10</p>
-                        <p class="item-price">32.990.000&#8363;</p>
-                    </div>
-                </a>
+            <div class="row col gap-2">
+                <h4 class="m-0" style="height: 30px;">Thương hiệu 4Acoustic với các sản phẩm sản xuất từ Đức</h4>
+                <div class="row gap-2">
+                    <a href="../../ChiTietSanPham/main-cs/4acoustic-sq1200.html" class="item rounded-3" style="width: 25%">
+                        <img src="../../../image/main-cs/4acoustic_sq1200.png" class="row mx-auto">
+                        <div class="item-title">
+                            <div class="item-title">
+                                <p class="item-name">Công Suất 2 Kênh 4Acoustic SQ1200</p>
+                                <p class="item-price">12.500.000đ</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../../ChiTietSanPham/loa/4coustic-si10.html" class="item rounded-3" style="width: 25%">
+                        <img src="../../../image/speaker/4acoustic-si10.png" class="row mx-auto">
+                        <div class="item-title">
+                            <p class="item-name">Loa 4Acoustic Si10</p>
+                            <p class="item-price">32.990.000đ</p>
+                        </div>
+                    </a>
+                    <a href="../../ChiTietSanPham/loa/4coustic-si12.html" class="item rounded-3" style="width: 25%">
+                        <img src="../../../image/speaker/4acoustic-si12.png" class="row mx-auto">
+                        <div class="item-title">
+                            <div class="item-title">
+                                <p class="item-name">Loa 4Acoustic Si12 New 2022</p>
+                                <p class="item-price">36.990.000đ</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
             </div>
+        </div>
+        <div class="row col-10 mx-auto mt-4 border-top border-3 pt-2">
+            <h5>4-Acoustic Pro Audio Germany Cái tên không còn quá lạ lẫm đối với mọi người trong giới âm thanh cũng như các chủ quán đầu tư karaoke trên khắp cả nước. </h5>
+            <p>
+                <br>Với mong muốn phục vụ tốt nhất cho nhu cầu sử dụng trong các hệ thống âm thanh cao cấp, chuyên nghiệp trong không gian có diện tích lớn, 4 Acoustic đã không ngừng nghiên cứu, phát triển sản phẩm mới, đặc biệt là các dòng loa chuyên nghiệp và giải trí gia đình.
+                <br>Mặc dù có tuổi đời còn khá trẻ ở thị trường Việt Nam, nhưng loa 4 Acoustic đã khẳng định được vị thế, sức ảnh hưởng của mình khi xuất hiện ở hầu hết các phòng hát kinh doanh lớn, nhỏ, hội trường, sân khấu biểu diễn, Gia đình…
+                <br>4 Acoustic là một thương hiệu âm thanh nổi tiếng. Với gần 20 năm kinh nghiệm, 4 Acoustic ngày càng hoàn thiện sản phẩm, sản xuất và phân phối các linh kiện chất lượng cao cho thị trường âm thanh chuyên nghiệp trên toàn thế giới. 4 Acoustic có trụ sở ở Ahlen và được phân phối trên 20 nước trong đó có Việt Nam.
+                <br>4 Acoustic có một công ty con là INLINE Marketing GmbH, có trụ sở chính đặt tại Münsterland, nằm ở phía tây bắc của North Rhine-Westphalia và giáp với Hamm và Dortmund ở khu vực Ruhr, đó là nơi có một đội ngũ kỹ sư sáng tạo đang bận rộn với việc khám phá và phát triển sản phẩm.
+                <br>4 Acoustic có 1 nhà máy được đặt tại Trung Quốc lắp ráp các sản phẩm dành cho thị trường Châu Á giá thành được tốt hơn như các dòng loa full: PCS-112J, PCS-112K... Các dòng Subwoofer Series 115BQ, 118BQ và 218BK... - Các dòng Amplifier SQ1200, SQ1600, SQ2404, SQ3204, SX44000, SX25000.... Tất cả Linh kiện và công nghệ đều được sử dụng theo dây truyền của 4Acoustic ĐỨC nhằm mang lại độ ổn định chất lượng và giá thành tốt nhất cho Khu Vực Đông Nam Á. Khi Mua Hàng chúng tôi sẽ cũng cấp chính xác thông sản phẩm xuất xứ lắp ráp tại nhà máy China và tại Đức.
+            </p>
+            <button id="btnDocThem" class="row btn border border-primary mx-auto mb-3" style="width: 100px; padding: 5px 0;">Đọc thêm</button>
+        </div>
+        <div class="row col-10 mx-auto mt-4" id="docThem">
+            <h3>Tuyên bố về sự phù hợp các tiêu chuẩn châu Âu</h3>
+            <p>
+                Hầu hết các sản phẩm của Nexo đều được gắn nhãn hiệu CE, chứng minh cho khách hàng và cơ quan chức năng rằng chúng đáp ứng các tiêu chuẩn Châu Âu. Các thành phần gia công sản phẩm được lựa chọn cẩn thận để đáp ứng các tiêu chuẩn chính xác mà Nexo yêu cầu.
+            </p>   
+            <h3>Thân thiện với môi trường</h3>
+            <p>
+                NEXO hoàn toàn tập trung vào việc thân thiện với môi trường, thông qua việc áp dụng các quy trình sản xuất bền vững hơn và ít gây ô nhiễm hơn, cũng như thông qua việc phát triển các hệ thống ngày càng nhỏ gọn hơn, dễ vận chuyển hơn và ít yêu cầu thiết lập hơn.
+              <br><br>  <img src="../../../image/danhMucInfor/4acoustic-dm.png" style="width: 80%;"class="row mx-auto">
+            </p>
+                <button class="btn border border-primary mx-auto" style="width: 100px; padding: 5px 0;margin-bottom: 10px;" id="btnThuGon">Thu gọn</button>
         </div>
         <footer class="row bg-black">
             <div id="footer-main" class="col-10 mx-auto">

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <title>Thương hiệu Baiervires</title>
+    <link rel="icon" type="image/x-icon" href="../../../image/icon/speaker.png">
     <script src="../../../js/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../css/danhMucSP.css">
     <link rel="stylesheet" href="../../../css/header-footer-nav.css">
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <title>Vang số LB Audio - LB E1000</title>
-    <link rel="icon" type="image/x-icon" href="../../../image/icon/speaker.png">
     <style>
         [class*=col-]{
             padding: 0;
@@ -18,9 +18,6 @@
     </style>
     <script>
         $(document).ready(function(){
-            function formatCurrency(number) {
-                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-            }
             $("#docThem").hide();
             $("#btnDocThem").click(function(){
                 $("#btnDocThem").hide();
@@ -30,16 +27,6 @@
                 $("#docThem").hide();
                 $("#btnDocThem").show();
             })
-            $("#slsp").change(function(){
-                let sl = $("#slsp").val();
-                let gia = 9500000;
-                if(!(sl == "")){
-                    $("#tongTien").html(formatCurrency(gia*sl));
-                }
-                else{
-                    $("#tongTien").html(formatCurrency(gia));
-                }
-            })
         })
     </script>
 </head>
@@ -47,7 +34,7 @@
     <div class="container-fluid" style="position: relative;">
         <header class="row bg-black">
             <div id="header-main" class="col-10 mx-auto d-flex">
-                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                <a id="logo" href="../../trangchu.html" class="d-flex" style="text-decoration: none;">
                     <img src="../../../image/icon/speaker.png" width="70px" height="70px">
                     <p>Uy tín - Chất lượng - Giá rẻ</p>
                     <div id="header-title">
@@ -70,16 +57,16 @@
                 </div>
             </div>
         </header>
-        <nav class="row mb-2">
+        <nav style="background-color: rgb(253, 250, 246);" class="row mb-2">
             <div class="col-10 mx-auto navbar navbar-expand">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item">
-                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <a href="../loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
                         <ul class="menu-lv-1">
-                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
-                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
-                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
-                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                            <li class="nav-item"><a href="../loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../loa/d&b.html" class="nav-link">d&b</a></li>
                         </ul>
                     </li>
                     <li>
@@ -104,57 +91,46 @@
             </div>
         </nav>
         <div id="link-path" class="row col-10 mx-auto border-bottom border-2">
-            <p class="m-0 p-0"><a href="../../trangchu.html">Trang chủ</a> > <a href="../../DanhMucSanPham/dsp.html">DSP - Vang số</a> > <a href="../../ChiTietSanPham/dsp/lbe1000.html">Vang số LB Audio - LB E1000</a></p>
+            <p class="m-0 p-0"><a href="../../trangchu.html">Trang chủ</a> > <a href="../../../html/DanhMucSanPham/theoHang/allen&heath-hang.html">Thương hiệu  Baiervires</a></p>
         </div>
-        <div class="row col-10 mx-auto text-dark">
-            <div class="col-8 row">
-                <div class="sp-main pb-2 col-12 row">
-                    <div class="col">
-                        <img src="../../../image/dsp/lbe1000.png" class="img-main">
-                    </div>
-                    <div class="col p-0">
-                        <h3>Vang số LB Audio - LB E1000</h3>
-                        <table class="table border" style="font-size: 14px;">
-                            <tr>
-                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>E1000</b></td>
-                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);"> LB Audio</b></td>
-                            </tr>
-                            <tr>
-                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
-                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
-                            </tr>
-                        </table>
-                        <div class="row m-0">
-                            <p style="width: 98px;">Số lượng:</p> 
-                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
-                            <label style="color: red; width:auto;">Giá: <b id="tongTien">9.500.000</b>đ</label>
-                            <button class="btn btn-primary py-2 mb-2">Đặt hàng ngay</button>
-                            <button class="btn btn-success py-2">Mua trả góp</button>
+        <div class=" row gap-2 col-10 mx-auto item-list">
+            <div class="col-2 m-0">
+                <h4 class="m-0" style="height: 30px;"> Baiervires</h4>
+                <img src="../../../image/trademark/baiervires-logo.png" height="10%" class="p-0">
+            </div>
+            <div class="row col gap-2">
+                <h4 class="m-0" style="height: 30px;">Chuyên sản xuất micro hàng đầu Trung Quốc</h4>
+                <div class="row gap-2">
+                    <a href="../../ChiTietSanPham/micro/bs550.html" class="item rounded-3" style="width: 25%">
+                        <img src="../../../image/micro/bs550.png" class="row mx-auto">
+                        <div class="item-title">
+                            <div class="item-title">
+                                <p class="item-name">Micro Karaoke Baiervires BS550</p>
+                                <p class="item-price">6.390.000đ</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <p>LB E1000 là thiết bị xử lý âm thanh kỹ thuật số tích hợp rất nhiều tính năng mới, mang đến sự hiệu quả cho bộ dàn âm thanh và phù hợp với rất nhiều mục đích sử dụng khác nhau...
-                        <br><br>
-                        E1000 trang bị đầy đủ các cổng vào như RCA, Optical cùng các ngõ ra âm thanh đầy đủ cho các thiết bị loa.
-                        <br><br>
-                        4 Line Micro với 2 chế độ EQ riêng biệt
-                        <br><br>
-                        <img src="../../../image/dsp/lbe1000.png" style="width: 50%; display: block;" class="mx-auto">
-                    </p>
-                </div>
+                    </a>
+                    <a href="../../ChiTietSanPham/micro/bs9500.html" class="item rounded-3" style="width: 25%">
+                        <img src="../../../image/micro/bs9500.png" class="row mx-auto">
+                        <div class="item-title">
+                            <div class="item-title">
+                                <p class="item-name">Micro Baiervires BS9500</p>
+                                <p class="item-price">9.500.000đ</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
             </div>
-            <div class="thongTinSP col ms-1">
-               <table class="table">
-                    <tr>
-                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
-                    </tr>
-                    <tr><td>Không có thông tin</td></tr>
-               </table>
-            </div>
+        </div>
+        <div class="row col-10 mx-auto mt-4 border-top border-3 pt-2">
+            <h3>Giới thiệu</h3>
+            <p>
+                Micro BaierVires là dòng micro không dây thuộc phân khúc cao cấp, thuộc thương hiệu BaierVires là 1 Thương hiệu riêng của BBS China và là nhà máy sản xuất mic lớn nhất tại Trung Quốc.
+                <br><br>
+                Với thiết kế đơn giản và lịch sự, vỏ micro màu vàng sang trọng cùng đầu phát có tông màu ghi xám và được làm bằng hợp kim phù hợp với nhiều không gian khác nhau khi đi cùng các thiết bị khác trong bộ âm thanh. Được thiết kế với 2 anten nhỏ gọn nhưng rất hiệu quả có khả năng thu phát sóng cực tốt. Chúng tôi đã thử nghiệm trong điều kiện nhiều vật cản trở như tường tuy nhiên ở khoảng cách từ 40-50m bán kính từ đầu phát thì Micro vẫn hoạt động tốt và cho ra âm thanh trong suốt, không bị hiện tượng nhiễu gây ra tiếng loẹt xoẹt như một số loại micro không dây hiện nay trên thị trường.
+                <br><br>
+                Thiết kế tay cầm micro BaierVires  bằng hợp kim, chụp micro bằng thép chống gỉ, lớp phủ nano chống bám vân tay, trơn trượt, trầy xước và bạc màu. Công nghệ dynamic kép nén trực tuyến, giúp tự động cân bằng âm thanh, kiểm soát giải tần số cao và hạn chế tiếng hú (feedback). Tính năng tự động dò tìm sóng phù hợp “sóng sạch”, tránh được tình trạng nhiễu sóng.-Tay BaierVires  tính năng tự ngắt hoạt động cực kỳ chính xác, đặt xuống sau 3s Micro đã tự ngắt tiếng và tự động bật khi cầm lên, mang lại hiệu quả sử dụng Pin tốt và chống hú hiệu quả.  Sau 5 phút không sử dụng micro tự chuyển sang chế độ ngắt pin (không tốn pin nữa ). Sau 15 phút thì micro chuyển sang chế độ tắt toàn bộ.
+            </p>
         </div>
         <footer class="row bg-black">
             <div id="footer-main" class="col-10 mx-auto">
@@ -189,3 +165,4 @@
         </footer>
     </div>
 </body>
+</html>  

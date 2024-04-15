@@ -70,12 +70,24 @@ nav .nav-item:hover .menu-lv-1{
 nav .nav-item:hover .menu-lv-1 a{
     color: black;
 }
+/* link path */
+#link-path{
+    margin-bottom: 25px;
+}
+#link-path a{
+    text-decoration: none;
+    color: black;
+}#link-path a:hover{
+    text-decoration: none;
+    color: red;
+}
 /* footer */
 #footer-main{
     position: relative;
+    margin: 30px 0;
 }
 #footer-main p{
-    margin-left: 35px;
+    margin-left: 29px;
 }
 #footer-title {
     position: absolute;
@@ -85,3 +97,15 @@ nav .nav-item:hover .menu-lv-1 a{
 #footer-title h1,#footer-title h2{
     display: inline-flex;
 }
+.footer-intro{
+    text-align: start;
+    color: white;
+}
+#footer-intro p{
+    font-size: 13.5px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+

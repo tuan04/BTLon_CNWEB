@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <title>Thương hiệu Allen & Heath</title>
+    <link rel="icon" type="image/x-icon" href="../../../image/icon/speaker.png">
     <script src="../../../js/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="../../../css/chiTietSP.css">
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../css/danhMucSP.css">
     <link rel="stylesheet" href="../../../css/header-footer-nav.css">
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <title>Vang số LB Audio - LB E1000</title>
-    <link rel="icon" type="image/x-icon" href="../../../image/icon/speaker.png">
     <style>
         [class*=col-]{
             padding: 0;
@@ -18,9 +18,6 @@
     </style>
     <script>
         $(document).ready(function(){
-            function formatCurrency(number) {
-                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-            }
             $("#docThem").hide();
             $("#btnDocThem").click(function(){
                 $("#btnDocThem").hide();
@@ -30,16 +27,6 @@
                 $("#docThem").hide();
                 $("#btnDocThem").show();
             })
-            $("#slsp").change(function(){
-                let sl = $("#slsp").val();
-                let gia = 9500000;
-                if(!(sl == "")){
-                    $("#tongTien").html(formatCurrency(gia*sl));
-                }
-                else{
-                    $("#tongTien").html(formatCurrency(gia));
-                }
-            })
         })
     </script>
 </head>
@@ -47,7 +34,7 @@
     <div class="container-fluid" style="position: relative;">
         <header class="row bg-black">
             <div id="header-main" class="col-10 mx-auto d-flex">
-                <a id="logo" href="../../../html/trangchu.html" class="d-flex" style="text-decoration: none;">
+                <a id="logo" href="../../trangchu.html" class="d-flex" style="text-decoration: none;">
                     <img src="../../../image/icon/speaker.png" width="70px" height="70px">
                     <p>Uy tín - Chất lượng - Giá rẻ</p>
                     <div id="header-title">
@@ -70,16 +57,16 @@
                 </div>
             </div>
         </header>
-        <nav class="row mb-2">
+        <nav style="background-color: rgb(253, 250, 246);" class="row mb-2">
             <div class="col-10 mx-auto navbar navbar-expand">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item">
-                        <a href="../../DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <a href="../loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
                         <ul class="menu-lv-1">
-                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
-                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
-                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
-                            <li class="nav-item"><a href="../../DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                            <li class="nav-item"><a href="../loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../loa/d&b.html" class="nav-link">d&b</a></li>
                         </ul>
                     </li>
                     <li>
@@ -104,57 +91,50 @@
             </div>
         </nav>
         <div id="link-path" class="row col-10 mx-auto border-bottom border-2">
-            <p class="m-0 p-0"><a href="../../trangchu.html">Trang chủ</a> > <a href="../../DanhMucSanPham/dsp.html">DSP - Vang số</a> > <a href="../../ChiTietSanPham/dsp/lbe1000.html">Vang số LB Audio - LB E1000</a></p>
+            <p class="m-0 p-0"><a href="../../trangchu.html">Trang chủ</a> > <a href="../../../html/DanhMucSanPham/theoHang/allen&heath-hang.html">Thương hiệu  Allen & Heath</a></p>
         </div>
-        <div class="row col-10 mx-auto text-dark">
-            <div class="col-8 row">
-                <div class="sp-main pb-2 col-12 row">
-                    <div class="col">
-                        <img src="../../../image/dsp/lbe1000.png" class="img-main">
-                    </div>
-                    <div class="col p-0">
-                        <h3>Vang số LB Audio - LB E1000</h3>
-                        <table class="table border" style="font-size: 14px;">
-                            <tr>
-                                <td><img src="../../../image/icon/box.png" width="20px">Mã SP: <b>E1000</b></td>
-                                <td><img src="../../../image/icon/box.png" width="20px">Đơn vị: <b style="color: rgb(206, 0, 0);">1 chiếc</b></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><img src="../../../image/icon/box.png" width="20px">Thương hiệu: <b style="color: rgb(82, 82, 255);"> LB Audio</b></td>
-                            </tr>
-                            <tr>
-                                <td><img src="../../../image/icon/box.png" width="20px">Tình trạng: <b style="color: rgb(206, 0, 0);">Còn hàng</b></td>
-                                <td><img src="../../../image/icon/badge.png" width="20px">Bảo hành: <b>24 tháng</b></td>
-                            </tr>
-                        </table>
-                        <div class="row m-0">
-                            <p style="width: 98px;">Số lượng:</p> 
-                            <input type="text" id="slsp" style="width: 40px; height: 30px;padding: 0;">
-                            <label style="color: red; width:auto;">Giá: <b id="tongTien">9.500.000</b>đ</label>
-                            <button class="btn btn-primary py-2 mb-2">Đặt hàng ngay</button>
-                            <button class="btn btn-success py-2">Mua trả góp</button>
+        <div class=" row gap-2 col-10 mx-auto item-list">
+            <div class="col-2 m-0">
+                <h4 class="m-0" style="height: 30px;"> Allen & Heath</h4>
+                <img src="../../../image/trademark/allen&heath-logo.png" height="10%" class="p-0">
+            </div>
+            <div class="row col gap-2">
+                <h4 class="m-0" style="height: 30px;">Thương hiệu Mixer nổi tiến hàng đầu thế giới </h4>
+                <div class="row gap-2">
+                    <a href="../../ChiTietSanPham/mixer/allen&heath-sq7.html" class="item rounded-3" style="width: 25%">
+                        <img src="../../../image/mixer/allen&heath-sq7.png" class="row mx-auto">
+                        <div class="item-title">
+                            <div class="item-title">
+                                <p class="item-name">Bàn Mixer Allen & Heath SQ7</p>
+                                <p class="item-price">177.210.000đ</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <p>LB E1000 là thiết bị xử lý âm thanh kỹ thuật số tích hợp rất nhiều tính năng mới, mang đến sự hiệu quả cho bộ dàn âm thanh và phù hợp với rất nhiều mục đích sử dụng khác nhau...
-                        <br><br>
-                        E1000 trang bị đầy đủ các cổng vào như RCA, Optical cùng các ngõ ra âm thanh đầy đủ cho các thiết bị loa.
-                        <br><br>
-                        4 Line Micro với 2 chế độ EQ riêng biệt
-                        <br><br>
-                        <img src="../../../image/dsp/lbe1000.png" style="width: 50%; display: block;" class="mx-auto">
-                    </p>
-                </div>
+                    </a>
+                    <a href="../../ChiTietSanPham/mixer/allen&heath-sq6.html" class="item rounded-3" style="width: 25%">
+                        <img src="../../../image/mixer/allen&heath-sq6.png" class="row mx-auto">
+                        <div class="item-title">
+                            <div class="item-title">
+                                <p class="item-name">Bàn Mixer Allen & Heath SQ6</p>
+                                <p class="item-price">135.829.883đ</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
             </div>
-            <div class="thongTinSP col ms-1">
-               <table class="table">
-                    <tr>
-                        <th colspan="2">THÔNG TIN SẢN PHẨM</th>
-                    </tr>
-                    <tr><td>Không có thông tin</td></tr>
-               </table>
-            </div>
+        </div>
+        <div class="row col-10 mx-auto mt-4 border-top border-3 pt-2">
+            <h3>Giới thiệu</h3>
+            <p>
+                Allen health là một thương hiệu thiết kế và sản xuất hàng đầu về mixer âm thanh chuyên nghiệp, nổi bật về âm thanh trực tiếp, cài đặt và DJ
+                <br><br>
+                Allen & Heath (còn được gọi là AH hoặc A & H) có trụ sở tại Penryn, Cornwall, Anh Quốc. Allen & Heath hiện là một phần của tập đoàn Audiotonix. Tính đến năm 2023, Allen &health đã có hơn 54 năm kinh nghiệm (từ năm 1969) trong chuyên môn của mình về nghiên cứu, sản xuất và thương mại trong nghành công nghiệp mixer âm thanh 
+                <br><br>
+                Đặc tính nổi trội của Allen & Heath được củng cố bởi sự lắng nghe và đánh giá ý kiến ​​của mọi người trong cộng đồng âm thanh, những người đặt niềm tin vào sản phẩm và bởi nhiều kỹ sư âm thanh hàng đầu và giỏi nhất thế giới – hay nói cách khác, là những chuyên gia tập trung cho nghiên cứu và phát triển để tạo nên sự khác biệt.
+                <br><br>
+                Từ model ZED-6 có kích thước siêu nhỏ gọn đến bảng điều khiển SQ-6 trong nhà thờ, đến hệ thống dLive kết hợp chuyến tham quan sân khấu, mỗi bộ trộn mang biểu tượng & màu đỏ cũng thể hiện sự chú ý đến từng chi tiết một cách cuồng nhiệt, bao gồm công thái học, quy trình làm việc, độ tin cậy và âm thanh sắc nét
+                <br><br>
+                Với slogan “Di sản, sự đổi mới và ngày càng phát triển” chính là hành trình tiếp theo A&H
+            </p>
         </div>
         <footer class="row bg-black">
             <div id="footer-main" class="col-10 mx-auto">
@@ -189,3 +169,4 @@
         </footer>
     </div>
 </body>
+</html>  

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tổng hợp loa</title>
+    <title>d&b Audiotechnik</title>
     <link rel="icon" type="image/x-icon" href="../../../image/icon/speaker.png">
     <script src="../../../js/jquery-3.7.1.min.js"></script>
     <script src="../../../js/bootstrap.bundle.min.js"></script>
@@ -16,6 +16,19 @@
             margin: 0;
         }
     </style>
+    <script>
+        $(document).ready(function(){
+            $("#docThem").hide();
+            $("#btnDocThem").click(function(){
+                $("#btnDocThem").hide();
+                $("#docThem").show();
+            })
+            $("#btnThuGon").click(function(){
+                $("#docThem").hide();
+                $("#btnDocThem").show();
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="container-fluid" style="position: relative;">
@@ -48,7 +61,7 @@
             <div class="col-10 mx-auto navbar navbar-expand">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item">
-                        <a href="loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <a href="../loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
                         <ul class="menu-lv-1">
                             <li class="nav-item"><a href="../loa/nexo.html" class="nav-link">Nexo</a></li>
                             <li class="nav-item"><a href="../loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
@@ -78,113 +91,78 @@
             </div>
         </nav>
         <div id="link-path" class="row col-10 mx-auto border-bottom border-2">
-            <p class="m-0 p-0"><a href="../../trangchu.html">Trang chủ</a> > <a href="../../DanhMucSanPham/loa/loa.html">Tất cả loa</a></p>
+            <p class="m-0 p-0"><a href="../../trangchu.html">Trang chủ</a> > <a href="../../../html/DanhMucSanPham/theoHang/d&b-hang.html">Thương hiệu d&b Audiotechnik</a></p>
         </div>
-        <div id="trademark-list" class="row col-10 mx-auto gap-1 mt-3 mb-3">
-            <h4 class="mx-auto text-center my-2">Các Thương Hiệu Loa Chính Hãng</h4>
-            <div class="row gap-1 mx-auto p-0">
-                <div class="row gap-1 mx-auto">
-                    <a href="../loa/loa.html" class="col btn rounded-3 border border-2 bg-success"><button class="btn text-white">Tất cả</button></a>
-                    <a href="../loa/nexo.html" class="col btn rounded-3 border border-2"><button class="btn">Nexo</button></a>
-                    <a href="../loa/4acoustic.html" class="col btn rounded-3 border border-2"><button class="btn">4 Acoustic</button></a>
-                    <a href="../loa/adamson.html" class="col btn rounded-3 border border-2"><button class="btn">Adamson</button></a>
-                    <a href="../loa/d&b.html" class="col btn rounded-3 border border-2"><button class="btn">d&b</button></a>
+        <div class="row col-10 mx-auto item-list">
+            <div class="col-2 m-0 me-3">
+                <h4 class="m-0" style="height: 30px;"> d&b Audiotechnik</h4>
+                <img src="../../../image/trademark/d&b.png" height="10%" class="p-0">
+            </div>
+            <div class="col gap-2">
+                <div class="row col gap-2">
+                    <h4 class="m-0" style="height: 30px;">Sản phẩm đến từ Đức</h4>
+                    <div class="row gap-2">
+                        <a href="../../ChiTietSanPham/loa/d&b-e4.html" class="item col rounded-3">
+                            <img src="../../../image/speaker/d&b-e4.png" class="row mx-auto">
+                            <div class="item-title">
+                                <div class="item-title">
+                                    <p class="item-name">Loa d&b Audiotechnik E4</p>
+                                    <p class="item-price">44.117.880đ</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../../ChiTietSanPham/loa/d&b-e6.html" class="item col rounded-3">
+                            <img src="../../../image/speaker/d&b-e6.png" class="row mx-auto">
+                            <div class="item-title">
+                                <div class="item-title">
+                                    <p class="item-name">Loa d&b Audiotechnik E6</p>
+                                    <p class="item-price">101.054.140đ</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../../ChiTietSanPham/main-cs/d&b-5d.html" class="item col rounded-3">
+                            <img src="../../../image/main-cs/d&b-5d.png" class="row mx-auto">
+                            <div class="item-title">
+                                <div class="item-title">
+                                    <p class="item-name">ampli d&b Audiotechnik 5D</p>
+                                    <p class="item-price">64.000.000₫đ</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../../ChiTietSanPham/main-cs/d&b-d80.html" class="item col rounded-3">
+                            <img src="../../../image/main-cs/d&b-d80.png" class="row mx-auto">
+                            <div class="item-title">
+                                <div class="item-title">
+                                    <p class="item-name">Amplifier d&b Audiotechnik D80</p>
+                                    <p class="item-price">Giá liên hệ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                </div>
+                <div class="row gap-2 mt-2">
+                    <a href="../../ChiTietSanPham/subwoofer/d&b-b4.html" class="item rounded-3" style="width: 24%;">
+                        <img src="../../../image/subwoofer/b4-sub.png" class="row mx-auto">
+                        <div class="item-title">
+                            <div class="item-title">
+                                <p class="item-name">Subwoofer d&b Audiotechnik B4 SUB</p>
+                                <p class="item-price">123.087.341đ</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class=" row gap-2 col-10 mx-auto item-list">
-            <h3>Tất cả loa</h3>
-            <div class="row gap-2 mx-auto">
-                <a href="../../ChiTietSanPham/loa/nexo-id24t.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-id24t.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa Nexo ID24T</p>
-                        <p class="item-price">36.990.000&#8363;</p>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/nexo-id84.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-id84.png" class="row mx-auto">
-                    <div class="item-title">
-                        <div class="item-title">
-                            <p class="item-name">Loa Nexo ID84</p>
-                            <p class="item-price">96.767.000&#8363;</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/4coustic-si12.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/4acoustic-si12.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa 4Coustic Si12</p>
-                        <p class="item-price">36.990.000&#8363;</p>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/d&b-e4.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/d&b-e4.png" class="row mx-auto">
-                    <div class="item-title">
-                        <div class="item-title">
-                            <p class="item-name">Loa d&b Audiotechnik E4</p>
-                            <p class="item-price">44.117.880&#8363;</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/nexo-eps8.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-eps8.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa Nexo EPS8 France</p>
-                        <p class="item-price">73.097.000₫</p>
-                    </div>
-                </a>
-            </div> 
-            <div class="row gap-2 mx-auto">
-                <a href="../../ChiTietSanPham/loa/nexo-ps10-r2.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-ps10.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa Nexo PS10 R2 France</p>
-                        <p class="item-price">115.296.000&#8363;</p>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/nexo-ps15.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/nexo-ps15.png" class="row mx-auto">
-                    <div class="item-title">
-                        <div class="item-title">
-                            <p class="item-name">Loa Nexo PS15 France</p>
-                            <p class="item-price">188.926.000&#8363;</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/d&b-e6.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/d&b-e6.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa d&b Audiotechnik E6</p>
-                        <p class="item-price">101.054.140&#8363;</p>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/adamson-point-12.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/adamson-point-12.png" class="row mx-auto">
-                    <div class="item-title">
-                        <div class="item-title">
-                            <p class="item-name">Loa Adamson Point 12</p>
-                            <p class="item-price">Giá liên hệ</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="../../ChiTietSanPham/loa/nexo-p12.html" class="item col rounded-3">
-                    <img src="../../../image/speaker/moniter-nexo-p12.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa Kiểm Âm Nexo P12 (Monitor)</p>
-                        <p class="item-price">Giá liên hệ</p>
-                    </div>
-                </a>
-            </div>
-            <div class="row gap-2 mx-auto">
-                <a href="../../ChiTietSanPham/loa/4coustic-si10.html" class="item rounded-3" style="width: 19.45%;">
-                    <img src="../../../image/speaker/4acoustic-si10.png" class="row mx-auto">
-                    <div class="item-title">
-                        <p class="item-name">Loa 4Acoustic Si10</p>
-                        <p class="item-price">32.990.000&#8363;</p>
-                    </div>
-                </a>
-            </div>
+        <div class="row col-10 mx-auto mt-4 border-top border-3 pt-2">
+            <h3>Giới thiệu</h3>
+            <h3>Nguồn gốc xuất xứ của thương hiệu D&B Audiotechnik</h3>
+            <p>
+                D&B Audiotechnik là một thương hiệu âm thanh chuyên nghiệp nổi tiếng trên toàn cầu. Họ chuyên sản xuất và phát triển các hệ thống âm thanh cao cấp dành cho sự kiện trực tiếp, hội nghị, giải trí và các ứng dụng âm thanh thương mại khác.
+                <br><br>
+                D&B Audiotechnik được thành lập tại Korb - một ngôi làng nhỏ không xa Stuttgart ở Đức vào ngày 18/04/1981 do chàng trai Jürgen Daubert và một người nữa là Rolf Belz. Giờ đây quy mô của họ đã lên tới 500 người và trở thành một trong những thương hiệu hàng đầu thế giới trong lĩnh vực âm thanh chuyên nghiệp.
+                <br><br>
+                Đầu tiên, đó là niềm tin rằng mọi khán giả đều được trải nghiệm chất lượng âm thanh hoàn hảo như nhau, bất kể vị trí nào trong khán phòng. Mối bận tâm tạo ra hiệu ứng âm thanh đồng nhất này gắn liền với sứ mệnh của công ty. Thứ hai, ý kiến ​​cho rằng loa và thiết bị điện tử nên được chế tạo một cách có hệ thống, nghĩa là hoạt động thống nhất hoàn toàn. Do đó, loa d&b chỉ có thể được điều khiển bởi bộ khuếch đại D&B; điều đó có nghĩa là sẽ không có sự lựa chọn nào với các thiết bị của hãng khác trong hệ thống âm thanh của D&B nhưng có lợi về mặt kỹ thuật, nó tối đa hóa hiệu quả, tính nhất quán và dễ sử dụng. Một cách làm việc được tích hợp đầy đủ giúp d&b tạo ra khác biệt với đám đông.
+            </p>
         </div>
         <footer class="row bg-black">
             <div id="footer-main" class="col-10 mx-auto">

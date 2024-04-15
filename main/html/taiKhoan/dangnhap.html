@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản | Đăng nhập</title>
+    <link rel="icon" type="image/x-icon" href="../../image/icon/speaker.png">
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/header-footer-nav.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <style>
+        [class*=col-]{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            let param = new URLSearchParams(window.location.search);
+            $("#thongBaoUser").css("color", "white");
+            $("#thongBaoPwd").css("color", "white");
+            function ktForm () { 
+                let user = $("#userNameTxt").val();
+                let pwd = $("#pwdTxt").val();
+                
+                if(user == ""){
+                    $("#thongBaoUser").html("Hãy nhập tên dăng nhập.");
+                    $("#thongBaoUser").css("color", "red");
+                    return false;
+                }
+                else if(!(/^(08|03|07|05|09|01)(\d{9}|\d{8})$/.test(user))){
+                    $("#thongBaoUser").html("Tên đăng nhập không đúng");
+                    $("#thongBaoUser").css("color", "red");
+                    return false;
+                }
+                else{
+                    $("#thongBaoUser").css("color", "white");
+                }
+                if(pwd == ""){
+                    $("#thongBaoPwd").html("Hãy nhập mật khẩu.");
+                    $("#thongBaoPwd").css("color", "red");
+                    return false;
+                }
+                else if(!(/^(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])(?=.*[A-Z])(?=.*\d).{6,}$/.test(pwd))){
+                    $("#thongBaoPwd").html("Mật khẩu không đúng");
+                    $("#thongBaoPwd").css("color", "red");
+                    return false;
+                }
+                else{
+                    $("#thongBaoPwd").css("color", "white");
+                }
+                
+                return true;
+            }
+            $("#userNameTxt, #pwdTxt").blur(function(){
+                ktForm();
+            })
+            $("#btnDN").click(function(){
+                let user = $("#userNameTxt").val();
+                let pwd = $("#pwdTxt").val();
+                if(ktForm() && user == localStorage.getItem('userName') && pwd ==  localStorage.getItem('pwd')){
+                    document.location.href = "../trangchu.html";
+                    alert("Đăng nhập thành công");
+                }
+                else{
+                    alert("Sai tên đăng nhập hoặc mật khẩu");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <header class="row bg-black">
+            <div id="header-main" class="col-10 mx-auto d-flex">
+                <a id="logo" href="../trangchu.html" class="d-flex" style="text-decoration: none;">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
+                    <p>Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="header-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </a>
+                <div id="header-search" class="input-group rounded-5 my-auto">
+                    <input type="text" class="form-control rounded-5" placeholder="Tìm kiếm sản phẩm......" style="border: none;">
+                    <button type="button" class="btn"><img src="../../image/icon/search.png" width="20px" style="margin-top: -7px;"></button>
+                </div>
+                <div id="header-icon" class="my-auto">
+                    <button type="button" class="btn" style="margin-right: 5px;"><img src="../../image/icon/bell.png" width="20px"></button>
+                    <button type="button" class="btn"><img src="../../image/icon/cart.png" width="20px"></button>
+                </div>
+                <div id="login">
+                    <a href="../taiKhoan/dangnhap.html" class="me-2">Đăng nhập</a>
+                    <p class="text-white"> | </p>
+                    <a href="../taiKhoan/dangky.html" class="ms-2">Đăng ký</a>
+                </div>
+            </div>
+        </header>
+        <nav style="background-color: rgb(253, 250, 246);" class="row mb-2">
+            <div class="col-10 mx-auto navbar navbar-expand">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a href="../../html/DanhMucSanPham/loa/loa.html" class="nav-link dropdown-toggle">Loa</a>
+                        <ul class="menu-lv-1">
+                            <li class="nav-item"><a href="../../html/DanhMucSanPham/loa/nexo.html" class="nav-link">Nexo</a></li>
+                            <li class="nav-item"><a href="../../html/DanhMucSanPham/loa/4acoustic.html" class="nav-link">4 Acoustic</a></li>
+                            <li class="nav-item"><a href="../../html/DanhMucSanPham/loa/adamson.html" class="nav-link">Adamson</a></li>
+                            <li class="nav-item"><a href="../../html/DanhMucSanPham/loa/d&b.html" class="nav-link">d&b</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../html/DanhMucSanPham/dsp.html" class="nav-link">Vang số</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/DanhMucSanPham/main-cs.html" class="nav-link">Cục đẩy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/DanhMucSanPham/subwoofer.html" class="nav-link">Loa Subwoofer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/DanhMucSanPham/micro.html" class="nav-link">Micro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/DanhMucSanPham/mixer.html" class="nav-link">Mixer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../html/gioithieu.html" class="nav-link">Giới thiệu</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="link-path" class="row col-10 mx-auto border-bottom border-2">
+            <p class="m-0 p-0"><a href="../trangchu.html">Trang chủ</a> > <a href="../../html/taiKhoan/dangnhap.html">Đăng nhập</a></p>
+        </div>
+        <div id="login-form" class="col-7 mx-auto">
+            <img src="../../image/icon/login-icon.png" width="100px" class="row mx-auto">
+            <h3 class="mt-3">Đăng nhập</h3>
+            <div class="login-input row col-7 mx-auto">
+                <div class="input-form">
+                    <label id="thongBaoUser">Hãy nhập tên đăng nhập</label>
+                    <input class="row" type="text" placeholder="Tên đăng nhập" id="userNameTxt">
+                </div>
+                <div class="input-form">
+                    <label id="thongBaoPwd">Hãy nhập mật khẩu</label>
+                    <input class="row" type="text" placeholder="Nhập mật khẩu" id="pwdTxt">
+                </div>
+                <button class="btn border border-primary mb-3" id="btnDN">Đăng nhập</button>
+                <label>Bạn chưa có tài khoản? <a href="dangky.html">Đăng ký ngay</a></label>
+            </div>
+        </div>
+        <footer class="row bg-black">
+            <div id="footer-main" class="col-10 mx-auto">
+                <div id="logo" class="d-flex">
+                    <img src="../../image/icon/speaker.png" width="70px" height="70px">
+                    <p class="text-white">Uy tín - Chất lượng - Giá rẻ</p>
+                    <div id="footer-title">
+                        <h1 style="color: orange;">SOUND</h1>
+                        <h2 style="color: aliceblue;">SHOP</h2>
+                    </div>
+                </div>
+                <div class="row footer-intro ms-1 mt-3">
+                    <div class="col-5 me-5">
+                        <h5 class="row p-0 m-0 mb-3">Cửa hàng bán phụ kiện âm thanh</h5>
+                        <p class="m-0">Địa chỉ: 108 Hồ Thị Dẹp ấp Phú Trung xã Phú Hòa Đông, huyện Củ Chi,<br> TP Hồ Chí Minh</p>
+                        <p class="m-0">Liên hệ: 0367155132 - Em Tuấn</p>
+                        <p class="m-0">Email: hthanhtuan.2307@gmail.com</p>
+                    </div>
+                    <div class="col">
+                        <h5 class="row p-0 m-0 mb-3">Về chúng tôi</h5>
+                        <a href="../gioithieu.html">Giới thiệu</a>
+                    </div>
+                    <div class="col m-0">
+                        <h5 class="row p-0 m-0 mb-3">Kết nối với chúng tôi</h5>
+                        <a href="https://www.facebook.com/profile.php?id=100061076222807" class="me-2"><img src="../../image/icon/fb.png" width="30px"></a>
+                        <a href="https://www.instagram.com/_ht.tuann/" class="me-2"><img src="../../image/icon/insta.png" width="30px"></a>
+                        <a href="https://zalo.me/0367155132" class="me-2"><img src="../../image/icon/zalo.png" width="30px"></a>
+                        <a href="https://www.messenger.com/t/100061076222807" class="me-2"><img src="../../image/icon/messs.png" width="30px"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>  
